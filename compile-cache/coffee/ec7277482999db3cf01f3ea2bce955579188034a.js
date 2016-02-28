@@ -1,0 +1,58 @@
+(function() {
+  module.exports = {
+    "Opening brackets": "‘“（〔［｛〈《「『【｟〘〖«〝＜",
+    "Opening brackets ASCII": "([{<",
+    "Opening brackets HANKAKU": "｢",
+    "Closing brackets": "’”）〕］｝〉》」』】｠〙〗»〟＞",
+    "Closing brackets ASCII": ")]}>",
+    "Closing brackets HANKAKU": "｣",
+    "Hyphens": "‐〜゠–－～",
+    "Hyphens ASCII": "-~",
+    "Dividing punctuation marks": "！？‼⁇⁈⁉",
+    "Dividing punctuation marks ASCII": "!?",
+    "Middle dots": "・：；",
+    "Middle dots ASCII": ":;",
+    "Middle dots HANKAKU": "･",
+    "Full stops": "。．",
+    "Full stops ASCII": ".",
+    "Full stops HANKAKU": "｡",
+    "Commas": "、，",
+    "Commas ASCII": ",",
+    "Commas HANKAKU": "､",
+    "Inseparable characters": "—―…‥",
+    "Inseparable characters sets": ["〳〵", "〴〵"],
+    "Iteration marks": "ヽヾゝゞ々〻",
+    "Prolonged sound mark": "ー",
+    "Prolonged sound mark HANKAKU": "ｰ",
+    "Small kana": "ぁぃぅぇぉァィゥェォっゃゅょゎゕゖッャュョヮヵヶㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ",
+    "Small kana HANKAKU": "ｧｨｩｪｫｬｭｮｯ",
+    "Prefixed abbreviations": "¥＄£€¤₩￡￥￦" + "№＃",
+    "Prefixed abbreviations ASCII": "\\$" + "#",
+    "Prefixed abbreviations KANJI": "",
+    "Postfixed abbreviations": "°′″℃％‰‱ℓ℉ℊΩKÅ" + "\\u3300-\\u3377\\u3371-\\u337A\\u3380-\\u33DF" + "¢￠",
+    "Postfixed abbreviations ASCII": "%",
+    "Postfixed abbreviations KANJI": "",
+    "Full-width ideographic space": "　",
+    "Hiragana": "\\u3041-\\u3096",
+    "Katakana": "\\u30A1-\\u30FA",
+    "Math symbols": "＝＜＞\\u2200-\\u2211\\u2214-\\u22FF⇒⇔↔",
+    "Math symbols ASCII": "=<>",
+    "Math symbols": "＋−×÷±∓－",
+    "Math symbols ASCII": "+-",
+    "Grouped numerals": "　，．０１２３４５６７８９",
+    "Grouped numerals ASCII": " ,.0123456789",
+    "Unit symbols": "　（）／１−４Ａ-Ｚａ-ｚΩμ℧Å−・",
+    "Unit symbols ASCII": " ()/1234" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz",
+    "Western word space": "\\u0020",
+    "Western characters": "\\u0021-\\u007E\\u00A0-\\u1FFF",
+    "Warichu opening brackets": "（〔［",
+    "Warichu opening brackets ASCII": "([",
+    "Warichu closing brackets": "）〕］",
+    "Warichu closing brackets ASCII": ")]"
+  };
+
+}).call(this);
+
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAiZmlsZSI6ICIiLAogICJzb3VyY2VSb290IjogIiIsCiAgInNvdXJjZXMiOiBbCiAgICAiL1VzZXJzL2lnYXdhdGFpaWNoaS8uYXRvbS9wYWNrYWdlcy9qYXBhbmVzZS13cmFwL2xpYi9jaGFyYWN0ZXItY2xhc3Nlcy5jb2ZmZWUiCiAgXSwKICAibmFtZXMiOiBbXSwKICAibWFwcGluZ3MiOiAiQUFHQTtBQUFBLEVBQUEsTUFBTSxDQUFDLE9BQVAsR0FDQTtBQUFBLElBR0Usa0JBQUEsRUFBb0IsbUJBSHRCO0FBQUEsSUFLRSx3QkFBQSxFQUEwQixNQUw1QjtBQUFBLElBTUUsMEJBQUEsRUFBNEIsR0FOOUI7QUFBQSxJQVVFLGtCQUFBLEVBQW9CLG1CQVZ0QjtBQUFBLElBWUUsd0JBQUEsRUFBMEIsTUFaNUI7QUFBQSxJQWFFLDBCQUFBLEVBQTRCLEdBYjlCO0FBQUEsSUFrQkUsU0FBQSxFQUFXLFFBbEJiO0FBQUEsSUFvQkUsZUFBQSxFQUFpQixJQXBCbkI7QUFBQSxJQXdCRSw0QkFBQSxFQUE4QixRQXhCaEM7QUFBQSxJQXlCRSxrQ0FBQSxFQUFvQyxJQXpCdEM7QUFBQSxJQThCRSxhQUFBLEVBQWUsS0E5QmpCO0FBQUEsSUErQkUsbUJBQUEsRUFBcUIsSUEvQnZCO0FBQUEsSUFnQ0UscUJBQUEsRUFBdUIsR0FoQ3pCO0FBQUEsSUFrQ0UsWUFBQSxFQUFjLElBbENoQjtBQUFBLElBbUNFLGtCQUFBLEVBQW9CLEdBbkN0QjtBQUFBLElBb0NFLG9CQUFBLEVBQXNCLEdBcEN4QjtBQUFBLElBc0NFLFFBQUEsRUFBVSxJQXRDWjtBQUFBLElBdUNFLGNBQUEsRUFBZ0IsR0F2Q2xCO0FBQUEsSUF3Q0UsZ0JBQUEsRUFBa0IsR0F4Q3BCO0FBQUEsSUE0Q0Usd0JBQUEsRUFBMEIsTUE1QzVCO0FBQUEsSUE2Q0UsNkJBQUEsRUFBK0IsQ0FBQyxJQUFELEVBQU8sSUFBUCxDQTdDakM7QUFBQSxJQStDRSxpQkFBQSxFQUFtQixRQS9DckI7QUFBQSxJQWlERSxzQkFBQSxFQUF3QixHQWpEMUI7QUFBQSxJQWtERSw4QkFBQSxFQUFnQyxHQWxEbEM7QUFBQSxJQXFERSxZQUFBLEVBQWMsMENBckRoQjtBQUFBLElBc0RFLG9CQUFBLEVBQXNCLFdBdER4QjtBQUFBLElBNkRFLHdCQUFBLEVBQTBCLFdBQUEsR0FBYyxJQTdEMUM7QUFBQSxJQThERSw4QkFBQSxFQUFnQyxLQUFBLEdBQVEsR0E5RDFDO0FBQUEsSUFpRUUsOEJBQUEsRUFBZ0MsRUFqRWxDO0FBQUEsSUEwRUUseUJBQUEsRUFBMkIsZUFBQSxHQUN2QiwrQ0FEdUIsR0FFdkIsSUE1RU47QUFBQSxJQTZFRSwrQkFBQSxFQUFpQyxHQTdFbkM7QUFBQSxJQWdGRSwrQkFBQSxFQUFpQyxFQWhGbkM7QUFBQSxJQW1GRSw4QkFBQSxFQUFnQyxHQW5GbEM7QUFBQSxJQXdGRSxVQUFBLEVBQVksaUJBeEZkO0FBQUEsSUE2RkUsVUFBQSxFQUFZLGlCQTdGZDtBQUFBLElBb0dFLGNBQUEsRUFBZ0Isc0NBcEdsQjtBQUFBLElBcUdFLG9CQUFBLEVBQXNCLEtBckd4QjtBQUFBLElBMEdFLGNBQUEsRUFBZ0IsU0ExR2xCO0FBQUEsSUEyR0Usb0JBQUEsRUFBc0IsSUEzR3hCO0FBQUEsSUFzSEUsa0JBQUEsRUFBb0IsZUF0SHRCO0FBQUEsSUF1SEUsd0JBQUEsRUFBMEIsZUF2SDVCO0FBQUEsSUEySEUsY0FBQSxFQUFnQixxQkEzSGxCO0FBQUEsSUE0SEUsb0JBQUEsRUFBc0IsVUFBQSxHQUNsQiw0QkFEa0IsR0FFbEIsNEJBOUhOO0FBQUEsSUFpSUUsb0JBQUEsRUFBc0IsU0FqSXhCO0FBQUEsSUFxSUUsb0JBQUEsRUFBc0IsZ0NBckl4QjtBQUFBLElBeUlFLDBCQUFBLEVBQTRCLEtBekk5QjtBQUFBLElBMElFLGdDQUFBLEVBQWtDLElBMUlwQztBQUFBLElBOElFLDBCQUFBLEVBQTRCLEtBOUk5QjtBQUFBLElBK0lFLGdDQUFBLEVBQWtDLElBL0lwQztHQURBLENBQUE7QUFBQSIKfQ==
+
+//# sourceURL=/Users/igawataiichi/.atom/packages/japanese-wrap/lib/character-classes.coffee

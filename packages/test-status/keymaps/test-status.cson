@@ -1,0 +1,3 @@
+'.atom-workspace':
+  'ctrl-shift-o': 'test-status:toggle-output'
+  'ctrl-shift-r': 'test-status:run-tests'
