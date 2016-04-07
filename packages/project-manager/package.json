@@ -39,8 +39,8 @@
   "homepage": "https://github.com/danielbrodin/atom-project-manager#readme",
   "_id": "project-manager@2.7.6",
   "_shasum": "5e820c7c35ef83b685af14c31c71073ac118742e",
-  "_resolved": "file:../d-11623-39017-1x4fgig/package.tgz",
-  "_from": "../d-11623-39017-1x4fgig/package.tgz",
+  "_resolved": "file:../d-116225-35256-sl426z/package.tgz",
+  "_from": "../d-116225-35256-sl426z/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [

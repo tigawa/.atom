@@ -1,7 +1,7 @@
 {
   "name": "minimap-highlight-selected",
   "main": "./lib/minimap-highlight-selected",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "description": "A minimap binding for the highlight-selected package",
   "repository": {
     "type": "git",
@@ -29,10 +29,10 @@
     "url": "https://github.com/atom-minimap/minimap-highlight-selected/issues"
   },
   "homepage": "https://github.com/atom-minimap/minimap-highlight-selected#readme",
-  "_id": "minimap-highlight-selected@4.3.1",
-  "_shasum": "6dedc4aec60be3e3a2b458e16eafed458d059fa6",
-  "_resolved": "file:../d-11623-32147-ebrkcn/package.tgz",
-  "_from": "../d-11623-32147-ebrkcn/package.tgz",
+  "_id": "minimap-highlight-selected@4.4.0",
+  "_shasum": "431224ac6cbe9db91f34c713f1c4bedd424fdfe6",
+  "_resolved": "file:../d-11627-26251-kbz027/package.tgz",
+  "_from": "../d-11627-26251-kbz027/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [

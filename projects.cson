@@ -1,1 +1,10 @@
-{}
+bandc:
+  title: "bandc"
+  paths: [
+    "/Users/igawataiichi/repo/bandc"
+  ]
+"html5-level1":
+  title: "html5-level1"
+  paths: [
+    "/Users/igawataiichi/repo/html5/html5-level1"
+  ]

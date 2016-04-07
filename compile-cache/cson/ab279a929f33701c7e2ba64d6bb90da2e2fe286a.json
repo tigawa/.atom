@@ -1,0 +1,1 @@
+{".text.html.basic":{"jquery":{"prefix":"jquery","body":"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>"}},".source.gfm":{"tableSnippet":{"prefix":"----","body":"|${1: sampleTxt1}|${2: sampleTxt2}|\n|:---|:---|\n|||"}}}

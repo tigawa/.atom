@@ -1,7 +1,7 @@
 {
   "name": "minimap-pigments",
   "main": "./lib/minimap-pigments",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "An Atom plugin to display pigments colors in the Minimap.",
   "repository": {
     "type": "git",
@@ -38,10 +38,10 @@
     "url": "https://github.com/abe33/minimap-pigments/issues"
   },
   "homepage": "https://github.com/abe33/minimap-pigments#readme",
-  "_id": "minimap-pigments@0.1.7",
-  "_shasum": "cc3b6cc7ddfee956e4712176b219da56905c57fc",
-  "_resolved": "file:../d-11623-32374-lcj9ld/package.tgz",
-  "_from": "../d-11623-32374-lcj9ld/package.tgz",
+  "_id": "minimap-pigments@0.2.0",
+  "_shasum": "b6381ebc33ac1fd9b983c326354f9e464db13d0a",
+  "_resolved": "file:../d-11627-26253-nbjto7/package.tgz",
+  "_from": "../d-11627-26253-nbjto7/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
