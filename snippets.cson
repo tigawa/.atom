@@ -1,12 +1,36 @@
 '.text.html.basic':
+# javascript
   'jquery':
     'prefix':'jquery'
     'body':'<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>'
-# '.source.gfm':
-#   'tableSnippet':
-#     'prefix':'----'
-#     'body':"""
-#     |${1: title}|${2: title}|
-#     |:---|:---|
-#     |||
-#     """
+'.source.gfm':
+# rabbit
+  'rabbit-image-width':
+    'prefix':'width'
+    'body':'{:relative_width="80"}'
+  'rabbit-head':
+    'prefix':'rabbit'
+    'body': """
+        # ${1: title}
+
+        subtitle
+        :  ${2: subtitle}
+
+        author
+        :   井川泰一
+
+        theme
+        :   rabbit
+    """
+# hugo
+  'hugo-head':
+    'prefix':'hugo'
+    'body': """
+      +++
+      title = "${1: title}"
+      tags = [${2: tags}]
+      menu = "main"
+      banner = "banners/${3: banner}"
+      images = []
+      +++
+    """
