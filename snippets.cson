@@ -32,5 +32,6 @@
       menu = "main"
       banner = "banners/${3: banner}"
       images = []
+      draft = "true"
       +++
     """
