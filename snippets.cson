@@ -4,6 +4,16 @@
     'prefix':'jquery'
     'body':'<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>'
 '.source.gfm':
+# markdown
+  'markdown-url':
+    'prefix':'url'
+    'body':'[${1:text}](${2:url})'
+  'markdown-link':
+    'prefix':'link'
+    'body':'[${1:text}](${2:url})'
+  'markdown-img':
+    'prefix':'img'
+    'body':'![${1:text}](${2:url})'
 # rabbit
   'rabbit-image-width':
     'prefix':'width'
@@ -11,10 +21,10 @@
   'rabbit-head':
     'prefix':'rabbit'
     'body': """
-        # ${1: title}
+        # ${1:title}
 
         subtitle
-        :  ${2: subtitle}
+        :  ${2:subtitle}
 
         author
         :   井川泰一
@@ -27,11 +37,13 @@
     'prefix':'hugo'
     'body': """
       +++
-      title = "${1: title}"
-      tags = [${2: tags}]
-      menu = "main"
-      banner = "banners/${3: banner}"
-      images = []
+      title = "${1:title}"
+      tags = ["${2:tags}"]
+      date = "${3:2016-06-25}"
+      banner = "banners/${4:banner.png}"
       draft = "true"
       +++
     """
+  'hugo-link':
+    'prefix':'hugo-link'
+    'body':'[${1:text}]({{< relref "${2:sample.md}" >}})'

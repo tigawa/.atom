@@ -1,0 +1,27 @@
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: 0.12
+        theme: hugo-icarus-theme
+        flags: --buildDrafts=true
+    - script:
+        name: create old RSS file
+        code: |
+          cp public/index.xml public/atom.xml
+deploy:
+  steps:
+    - script:
+        name: clean-apt-get
+        code: |
+          apt-get update && \
+          sudo apt-get install -f && \
+          sudo rm -rf /var/lib/apt/lists/* && \
+          sudo apt-get update
+    - install-packages:
+        packages: git ssh-client perl liberror-perl
+    - lukevivier/gh-pages@0.2.1:
+        token: $GITHUB_TOKEN
+        domain: tigawa.github.com
+        basedir: public
+        repo: tigawa/tigawa.github.com
