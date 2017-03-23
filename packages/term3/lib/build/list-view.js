@@ -7,6 +7,9 @@ var flux = require("flukes");
 var terminals = require("../terminal-model");
 
 var TerminalView = React.createClass({displayName: 'TerminalView',
+  propTypes: {
+    terminal: React.PropTypes.instanceOf(terminals),
+  },
   onMouseDown: function () {
     this.props.terminal.open();
   },
@@ -24,8 +27,12 @@ var TerminalView = React.createClass({displayName: 'TerminalView',
 var ListView = React.createClass({displayName: 'ListView',
   mixins: [flux.createAutoBinder([], [terminals])],
   render: function () {
+    // XXXX: Horrible hack to work around a bug in Atom. Sometimes, Atom will erase NODE_ENV when run from the command line
+    if (!process.env.NODE_ENV) {
+      process.env.NODE_ENV = "production";
+    }
     if (!terminals.length) {
-      return React.DOM.div(null);
+      return (React.DOM.div(null));
     }
     const terms = terminals.map(function (t) {
       return (TerminalView({terminal: t, key: t.id}));

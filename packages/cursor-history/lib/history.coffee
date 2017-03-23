@@ -11,36 +11,43 @@ class History
     @entries = []
 
   clear: ->
-    e.destroy() for e in @entries
+    entry.destroy() for entry in @entries
     @init()
 
   destroy: ->
-    e.destroy() for e in @entries
+    entry.destroy() for entry in @entries
     {@index, @entries} = {}
+
+  findValidIndex: (direction, {URI}={}) ->
+    lastIndex = @entries.length - 1
+
+    switch direction
+      when 'next'
+        startIndex = @index + 1
+        indexesToSearch = [startIndex..lastIndex]
+      when 'prev'
+        startIndex = @index - 1
+        indexesToSearch = [startIndex..0]
+
+    return unless 0 <= startIndex <= lastIndex
+
+    for index in indexesToSearch when (entry = @entries[index]).isValid()
+      if URI?
+        return index if entry.URI is URI
+      else
+        return index
+    null
+
+  get: (direction, options={}) ->
+    index = @findValidIndex(direction, options)
+    if index?
+      @entries[@index=index]
 
   isIndexAtHead: ->
     @index is @entries.length
 
-  findIndex: (direction, URI=null) ->
-    [start, indexes] = switch direction
-      when 'next' then [start=(@index + 1), [start..(@entries.length - 1)]]
-      when 'prev' then [start=(@index - 1), [start..0]]
-
-    # Check if valid index range
-    return null unless (0 <= start <= (@entries.length - 1))
-
-    for index in indexes
-      entry = @entries[index]
-      continue unless entry.isValid()
-      if URI?
-        return index if (entry.URI is URI)
-      else
-        return index
-
-  get: (direction, {URI}={}) ->
-    index = @findIndex(direction, URI)
-    if index?
-      @entries[@index=index]
+  setIndexToHead: ->
+    @index = @entries.length
 
   # History concatenation mimicking Vim's way.
   # newEntry(=old position from where you jump to land here) is
@@ -94,26 +101,46 @@ class History
   #    newEntry(row=7) is appended to end of @entries.
   #    No special @index adjustment.
   #
-  add: ({editor, point, URI}, {setIndexToHead}={}) ->
+  add: (location, {setIndexToHead}={}) ->
+    {editor, point, URI} = location
     newEntry = new Entry(editor, point, URI)
-    e.destroy() for e in @entries when e.isAtSameRow(newEntry)
-    @entries.push newEntry
 
+    if settings.get('keepSingleEntryPerBuffer')
+      for entry in @entries when entry.URI is newEntry.URI
+        entry.destroy()
+    else
+      for entry in @entries when entry.isAtSameRow(newEntry)
+        entry.destroy()
+
+    @entries.push(newEntry)
+    # Only when we are allowed to modify index, we can safely remove @entries.
     if setIndexToHead ? true
-      # Only when setIndexToHead is true, we can safely remove @entries.
-      @removeEntries()
-      @index = @entries.length
+      @removeInvalidEntries()
+      @setIndexToHead()
 
-  removeEntries: ->
+  uniqueByBuffer: ->
+    return unless @entries.length
+    buffers = []
+    for entry in @entries.slice().reverse()
+      URI = entry.URI
+      if URI in buffers
+        entry.destroy()
+      else
+        buffers.push(URI)
+    @removeInvalidEntries()
+    @setIndexToHead()
+
+  removeInvalidEntries: ->
     # Scrub invalid
-    e.destroy() for e in @entries when not e.isValid()
-    @entries = (e for e in @entries when e.isValid())
+    for entry in @entries when not entry.isValid()
+      entry.destroy()
+    @entries = @entries.filter (entry) -> entry.isValid()
 
     # Remove if exceeds max
     removeCount = @entries.length - settings.get('max')
     if removeCount > 0
       removed = @entries.splice(0, removeCount)
-      e.destroy() for e in removed
+      entry.destroy() for entry in removed
 
   inspect: (msg) ->
     ary =

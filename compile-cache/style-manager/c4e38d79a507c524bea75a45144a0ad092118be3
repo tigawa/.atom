@@ -1,0 +1,1 @@
+{"source":"@keyframes cursor-history-flash {\n  from {\n    background-color: rgba(0, 0, 204, 0.8);\n  }\n  to {\n    background-color: transparent;\n  }\n}\natom-text-editor.editor .line.cursor-history-flash-line {\n  animation-name: cursor-history-flash;\n  animation-iteration-count: 1;\n  animation-duration: .5s;\n}\n"}

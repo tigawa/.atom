@@ -1,5 +1,28 @@
 
 <a name="1.2.3"></a>
+## [1.5.6](https://github.com/littlebee/git-time-machine/compare/1.5.5...1.5.6) (2017-02-11)
+
+
+### Bugs Fixed in this Release
+* [7297db4](https://github.com/littlebee/git-time-machine/commit/7297db4174168939154f6a375165663e4961741c)  fix sync scroll regression after split-diff upgrade
+
+## [1.5.5](https://github.com/littlebee/git-time-machine/compare/1.5.4...1.5.5) (2017-02-5)
+
+
+### Other Commits
+* [872c5fe](https://github.com/littlebee/git-time-machine/commit/872c5fe799658c4dbdf6c7154984c4efcdbb4dc9) upgrade split-diff to 1.1.1. fixes #92 - less psudo selector deprecation
+
+## [1.5.4](https://github.com/littlebee/git-time-machine/compare/1.5.3...1.5.4) (2016-11-318)
+merged pull request plus random bug fixes
+
+### Other Commits
+* [21bd206](https://github.com/littlebee/git-time-machine/commit/21bd2061ed61c1c63272ceb72b133ef1cee7e772) upgrade git-log-utils to 0.2.3 to fix #75
+* [820c846](https://github.com/littlebee/git-time-machine/commit/820c8466c0e34cbd8985716368a9b54ae27b16cd) resize time plot on window resize. close #76
+* [a422423](https://github.com/littlebee/git-time-machine/commit/a4224232f791a0be3c3988cff040c367fe5bc849) add note to troubleshooting section for windows users. close #86
+* [0b63723](https://github.com/littlebee/git-time-machine/commit/0b6372378005c3dd04c8a465582311de6a6a3f5a) Merge pull request #66 from apetro/two-fewer-apostrophes
+* [08717ca](https://github.com/littlebee/git-time-machine/commit/08717ca893f51d982c37bc8d695e5e926f00acfa) Trivial: 2x: remove erroneous apostrophes in possessive 'its'.
+* [4634380](https://github.com/littlebee/git-time-machine/commit/463438044a8587321c531468c704d0dabcd3d419) fix split-diff url
+
 ## [1.5.3](https://github.com/littlebee/git-time-machine/compare/1.5.2...1.5.3) (2016-05-145)
 Upgrade split diff dependency and fix deprecation.  Thanks Alhadis and Michael!   Very much appreciated.
 

@@ -1,0 +1,973 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Applications/Atom.app/Contents/Resources/app/apm/bin/node',
+1 verbose cli   '/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   '--globalconfig',
+1 verbose cli   '/Users/igawataiichi/.atom/.apm/.apmrc',
+1 verbose cli   '--userconfig',
+1 verbose cli   '/Users/igawataiichi/.atom/.apmrc',
+1 verbose cli   'rebuild',
+1 verbose cli   '--runtime=electron',
+1 verbose cli   '--target=1.3.13',
+1 verbose cli   '--arch=x64' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.5
+4 info readInstalled object
+5 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview',
+5 verbose rebuild   'markdown-preview@0.158.0' ]
+6 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views',
+6 verbose rebuild   'atom-space-pen-views@2.2.0' ]
+7 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/fuzzaldrin',
+7 verbose rebuild   'fuzzaldrin@2.1.0' ]
+8 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen',
+8 verbose rebuild   'space-pen@5.1.2' ]
+9 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim',
+9 verbose rebuild   'grim@1.5.0' ]
+10 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary',
+10 verbose rebuild   'emissary@1.3.3' ]
+11 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus',
+11 verbose rebuild   'underscore-plus@1.6.6' ]
+12 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus/node_modules/underscore',
+12 verbose rebuild   'underscore@1.6.0' ]
+13 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/mixto',
+13 verbose rebuild   'mixto@1.0.0' ]
+14 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/property-accessors',
+14 verbose rebuild   'property-accessors@1.1.3' ]
+15 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map',
+15 verbose rebuild   'es6-weak-map@0.1.4' ]
+16 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/d',
+16 verbose rebuild   'd@0.1.1' ]
+17 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext',
+17 verbose rebuild   'es5-ext@0.10.11' ]
+18 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator',
+18 verbose rebuild   'es6-iterator@2.0.0' ]
+19 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol',
+19 verbose rebuild   'es6-symbol@3.0.2' ]
+20 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator',
+20 verbose rebuild   'es6-iterator@0.1.3' ]
+21 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol',
+21 verbose rebuild   'es6-symbol@2.0.1' ]
+22 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen/node_modules/jquery',
+22 verbose rebuild   'jquery@2.1.4' ]
+23 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio',
+23 verbose rebuild   'cheerio@0.15.0' ]
+24 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2',
+24 verbose rebuild   'htmlparser2@3.7.3' ]
+25 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler',
+25 verbose rebuild   'domhandler@2.2.1' ]
+26 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domelementtype',
+26 verbose rebuild   'domelementtype@1.3.0' ]
+27 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils',
+27 verbose rebuild   'domutils@1.5.1' ]
+28 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer',
+28 verbose rebuild   'dom-serializer@0.1.0' ]
+29 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/domelementtype',
+29 verbose rebuild   'domelementtype@1.1.3' ]
+30 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/entities',
+30 verbose rebuild   'entities@1.1.1' ]
+31 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream',
+31 verbose rebuild   'readable-stream@1.1.14' ]
+32 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is',
+32 verbose rebuild   'core-util-is@1.0.2' ]
+33 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray',
+33 verbose rebuild   'isarray@0.0.1' ]
+34 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder',
+34 verbose rebuild   'string_decoder@0.10.31' ]
+35 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits',
+35 verbose rebuild   'inherits@2.0.1' ]
+36 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/entities',
+36 verbose rebuild   'entities@1.0.0' ]
+37 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect',
+37 verbose rebuild   'CSSselect@0.4.1' ]
+38 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/CSSwhat',
+38 verbose rebuild   'CSSwhat@0.4.7' ]
+39 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils',
+39 verbose rebuild   'domutils@1.4.3' ]
+40 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils/node_modules/domelementtype',
+40 verbose rebuild   'domelementtype@1.3.0' ]
+41 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/lodash',
+41 verbose rebuild   'lodash@2.4.2' ]
+42 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus',
+42 verbose rebuild   'fs-plus@2.9.1' ]
+43 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/mkdirp',
+43 verbose rebuild   'mkdirp@0.3.5' ]
+44 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/rimraf',
+44 verbose rebuild   'rimraf@2.2.8' ]
+45 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/async',
+45 verbose rebuild   'async@0.2.10' ]
+46 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights',
+46 verbose rebuild   'highlights@1.3.1' ]
+47 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate',
+47 verbose rebuild   'first-mate@5.1.1' ]
+48 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary',
+48 verbose rebuild   'emissary@1.3.3' ]
+49 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/mixto',
+49 verbose rebuild   'mixto@1.0.0' ]
+50 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/property-accessors',
+50 verbose rebuild   'property-accessors@1.1.3' ]
+51 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map',
+51 verbose rebuild   'es6-weak-map@0.1.4' ]
+52 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/d',
+52 verbose rebuild   'd@0.1.1' ]
+53 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext',
+53 verbose rebuild   'es5-ext@0.10.11' ]
+54 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator',
+54 verbose rebuild   'es6-iterator@2.0.0' ]
+55 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol',
+55 verbose rebuild   'es6-symbol@3.0.2' ]
+56 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator',
+56 verbose rebuild   'es6-iterator@0.1.3' ]
+57 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol',
+57 verbose rebuild   'es6-symbol@2.0.1' ]
+58 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/event-kit',
+58 verbose rebuild   'event-kit@1.5.0' ]
+59 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma',
+59 verbose rebuild   'oniguruma@5.1.2' ]
+60 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma/node_modules/nan',
+60 verbose rebuild   'nan@2.3.5' ]
+61 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season',
+61 verbose rebuild   'season@5.3.0' ]
+62 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/cson-parser',
+62 verbose rebuild   'cson-parser@1.0.9' ]
+63 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/cson-parser/node_modules/coffee-script',
+63 verbose rebuild   'coffee-script@1.9.0' ]
+64 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/optimist',
+64 verbose rebuild   'optimist@0.4.0' ]
+65 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/optimist/node_modules/wordwrap',
+65 verbose rebuild   'wordwrap@0.0.3' ]
+66 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate-select-grammar',
+66 verbose rebuild   'first-mate-select-grammar@1.0.1' ]
+67 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate-select-grammar/node_modules/lodash',
+67 verbose rebuild   'lodash@3.10.1' ]
+68 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/once',
+68 verbose rebuild   'once@1.3.3' ]
+69 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/once/node_modules/wrappy',
+69 verbose rebuild   'wrappy@1.0.2' ]
+70 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist',
+70 verbose rebuild   'optimist@0.6.1' ]
+71 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist/node_modules/wordwrap',
+71 verbose rebuild   'wordwrap@0.0.3' ]
+72 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist/node_modules/minimist',
+72 verbose rebuild   'minimist@0.0.10' ]
+73 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster',
+73 verbose rebuild   'roaster@1.2.0' ]
+74 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/marked',
+74 verbose rebuild   'marked@0.3.5' ]
+75 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/emoji-images',
+75 verbose rebuild   'emoji-images@0.0.2' ]
+76 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/task-lists',
+76 verbose rebuild   'task-lists@0.2.0' ]
+77 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml',
+77 verbose rebuild   'js-yaml@3.1.0' ]
+78 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse',
+78 verbose rebuild   'argparse@0.1.16' ]
+79 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse/node_modules/underscore',
+79 verbose rebuild   'underscore@1.7.0' ]
+80 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string',
+80 verbose rebuild   'underscore.string@2.4.0' ]
+81 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/esprima',
+81 verbose rebuild   'esprima@1.0.4' ]
+82 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/underscore',
+82 verbose rebuild   'underscore@1.6.0' ]
+83 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp',
+83 verbose rebuild   'temp@0.8.3' ]
+84 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp/node_modules/os-tmpdir',
+84 verbose rebuild   'os-tmpdir@1.0.1' ]
+85 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp/node_modules/rimraf',
+85 verbose rebuild   'rimraf@2.2.8' ]
+86 verbose rebuild path, id [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/wrench',
+86 verbose rebuild   'wrench@1.5.9' ]
+87 silly rebuild set [ '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/fuzzaldrin',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus/node_modules/underscore',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/mixto',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/property-accessors',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/d',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen/node_modules/jquery',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domelementtype',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/domelementtype',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/entities',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/entities',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/CSSwhat',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils/node_modules/domelementtype',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/lodash',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/mkdirp',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/rimraf',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/async',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/mixto',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/property-accessors',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/d',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/event-kit',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma/node_modules/nan',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/cson-parser',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/cson-parser/node_modules/coffee-script',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/optimist',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/season/node_modules/optimist/node_modules/wordwrap',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate-select-grammar',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate-select-grammar/node_modules/lodash',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/once',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/once/node_modules/wrappy',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist/node_modules/wordwrap',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/optimist/node_modules/minimist',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/marked',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/emoji-images',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/task-lists',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse/node_modules/underscore',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/argparse/node_modules/underscore.string',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/js-yaml/node_modules/esprima',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/roaster/node_modules/underscore',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp/node_modules/os-tmpdir',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/temp/node_modules/rimraf',
+87 silly rebuild set   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/wrench' ]
+88 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views
+89 info lifecycle atom-space-pen-views@2.2.0~preinstall: atom-space-pen-views@2.2.0
+90 silly lifecycle atom-space-pen-views@2.2.0~preinstall: no script for preinstall, continuing
+91 info linkStuff atom-space-pen-views@2.2.0
+92 silly linkStuff atom-space-pen-views@2.2.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+93 verbose linkBins atom-space-pen-views@2.2.0
+94 verbose linkMans atom-space-pen-views@2.2.0
+95 verbose rebuildBundles atom-space-pen-views@2.2.0
+96 verbose rebuildBundles [ 'fuzzaldrin', 'space-pen' ]
+97 info lifecycle atom-space-pen-views@2.2.0~install: atom-space-pen-views@2.2.0
+98 silly lifecycle atom-space-pen-views@2.2.0~install: no script for install, continuing
+99 info lifecycle atom-space-pen-views@2.2.0~postinstall: atom-space-pen-views@2.2.0
+100 silly lifecycle atom-space-pen-views@2.2.0~postinstall: no script for postinstall, continuing
+101 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/fuzzaldrin
+102 info lifecycle fuzzaldrin@2.1.0~preinstall: fuzzaldrin@2.1.0
+103 silly lifecycle fuzzaldrin@2.1.0~preinstall: no script for preinstall, continuing
+104 info linkStuff fuzzaldrin@2.1.0
+105 silly linkStuff fuzzaldrin@2.1.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules as its parent node_modules
+106 verbose linkBins fuzzaldrin@2.1.0
+107 verbose linkMans fuzzaldrin@2.1.0
+108 verbose rebuildBundles fuzzaldrin@2.1.0
+109 info lifecycle fuzzaldrin@2.1.0~install: fuzzaldrin@2.1.0
+110 silly lifecycle fuzzaldrin@2.1.0~install: no script for install, continuing
+111 info lifecycle fuzzaldrin@2.1.0~postinstall: fuzzaldrin@2.1.0
+112 silly lifecycle fuzzaldrin@2.1.0~postinstall: no script for postinstall, continuing
+113 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen
+114 info lifecycle space-pen@5.1.2~preinstall: space-pen@5.1.2
+115 silly lifecycle space-pen@5.1.2~preinstall: no script for preinstall, continuing
+116 info linkStuff space-pen@5.1.2
+117 silly linkStuff space-pen@5.1.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules as its parent node_modules
+118 verbose linkBins space-pen@5.1.2
+119 verbose linkMans space-pen@5.1.2
+120 verbose rebuildBundles space-pen@5.1.2
+121 verbose rebuildBundles [ 'jquery' ]
+122 info lifecycle space-pen@5.1.2~install: space-pen@5.1.2
+123 silly lifecycle space-pen@5.1.2~install: no script for install, continuing
+124 info lifecycle space-pen@5.1.2~postinstall: space-pen@5.1.2
+125 silly lifecycle space-pen@5.1.2~postinstall: no script for postinstall, continuing
+126 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim
+127 info lifecycle grim@1.5.0~preinstall: grim@1.5.0
+128 silly lifecycle grim@1.5.0~preinstall: no script for preinstall, continuing
+129 info linkStuff grim@1.5.0
+130 silly linkStuff grim@1.5.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+131 verbose linkBins grim@1.5.0
+132 verbose linkMans grim@1.5.0
+133 verbose rebuildBundles grim@1.5.0
+134 verbose rebuildBundles [ 'emissary' ]
+135 info lifecycle grim@1.5.0~install: grim@1.5.0
+136 silly lifecycle grim@1.5.0~install: no script for install, continuing
+137 info lifecycle grim@1.5.0~postinstall: grim@1.5.0
+138 silly lifecycle grim@1.5.0~postinstall: no script for postinstall, continuing
+139 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary
+140 info lifecycle emissary@1.3.3~preinstall: emissary@1.3.3
+141 silly lifecycle emissary@1.3.3~preinstall: no script for preinstall, continuing
+142 info linkStuff emissary@1.3.3
+143 silly linkStuff emissary@1.3.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules as its parent node_modules
+144 verbose linkBins emissary@1.3.3
+145 verbose linkMans emissary@1.3.3
+146 verbose rebuildBundles emissary@1.3.3
+147 verbose rebuildBundles [ 'es6-weak-map', 'mixto', 'property-accessors' ]
+148 info lifecycle emissary@1.3.3~install: emissary@1.3.3
+149 silly lifecycle emissary@1.3.3~install: no script for install, continuing
+150 info lifecycle emissary@1.3.3~postinstall: emissary@1.3.3
+151 silly lifecycle emissary@1.3.3~postinstall: no script for postinstall, continuing
+152 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus
+153 info lifecycle underscore-plus@1.6.6~preinstall: underscore-plus@1.6.6
+154 silly lifecycle underscore-plus@1.6.6~preinstall: no script for preinstall, continuing
+155 info linkStuff underscore-plus@1.6.6
+156 silly linkStuff underscore-plus@1.6.6 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+157 verbose linkBins underscore-plus@1.6.6
+158 verbose linkMans underscore-plus@1.6.6
+159 verbose rebuildBundles underscore-plus@1.6.6
+160 verbose rebuildBundles [ 'underscore' ]
+161 info lifecycle underscore-plus@1.6.6~install: underscore-plus@1.6.6
+162 silly lifecycle underscore-plus@1.6.6~install: no script for install, continuing
+163 info lifecycle underscore-plus@1.6.6~postinstall: underscore-plus@1.6.6
+164 silly lifecycle underscore-plus@1.6.6~postinstall: no script for postinstall, continuing
+165 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus/node_modules/underscore
+166 info lifecycle underscore@1.6.0~preinstall: underscore@1.6.0
+167 silly lifecycle underscore@1.6.0~preinstall: no script for preinstall, continuing
+168 info linkStuff underscore@1.6.0
+169 silly linkStuff underscore@1.6.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/underscore-plus/node_modules as its parent node_modules
+170 verbose linkBins underscore@1.6.0
+171 verbose linkMans underscore@1.6.0
+172 verbose rebuildBundles underscore@1.6.0
+173 info lifecycle underscore@1.6.0~install: underscore@1.6.0
+174 silly lifecycle underscore@1.6.0~install: no script for install, continuing
+175 info lifecycle underscore@1.6.0~postinstall: underscore@1.6.0
+176 silly lifecycle underscore@1.6.0~postinstall: no script for postinstall, continuing
+177 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/mixto
+178 info lifecycle mixto@1.0.0~preinstall: mixto@1.0.0
+179 silly lifecycle mixto@1.0.0~preinstall: no script for preinstall, continuing
+180 info linkStuff mixto@1.0.0
+181 silly linkStuff mixto@1.0.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules as its parent node_modules
+182 verbose linkBins mixto@1.0.0
+183 verbose linkMans mixto@1.0.0
+184 verbose rebuildBundles mixto@1.0.0
+185 info lifecycle mixto@1.0.0~install: mixto@1.0.0
+186 silly lifecycle mixto@1.0.0~install: no script for install, continuing
+187 info lifecycle mixto@1.0.0~postinstall: mixto@1.0.0
+188 silly lifecycle mixto@1.0.0~postinstall: no script for postinstall, continuing
+189 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/property-accessors
+190 info lifecycle property-accessors@1.1.3~preinstall: property-accessors@1.1.3
+191 silly lifecycle property-accessors@1.1.3~preinstall: no script for preinstall, continuing
+192 info linkStuff property-accessors@1.1.3
+193 silly linkStuff property-accessors@1.1.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules as its parent node_modules
+194 verbose linkBins property-accessors@1.1.3
+195 verbose linkMans property-accessors@1.1.3
+196 verbose rebuildBundles property-accessors@1.1.3
+197 info lifecycle property-accessors@1.1.3~install: property-accessors@1.1.3
+198 silly lifecycle property-accessors@1.1.3~install: no script for install, continuing
+199 info lifecycle property-accessors@1.1.3~postinstall: property-accessors@1.1.3
+200 silly lifecycle property-accessors@1.1.3~postinstall: no script for postinstall, continuing
+201 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map
+202 info lifecycle es6-weak-map@0.1.4~preinstall: es6-weak-map@0.1.4
+203 silly lifecycle es6-weak-map@0.1.4~preinstall: no script for preinstall, continuing
+204 info linkStuff es6-weak-map@0.1.4
+205 silly linkStuff es6-weak-map@0.1.4 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules as its parent node_modules
+206 verbose linkBins es6-weak-map@0.1.4
+207 verbose linkMans es6-weak-map@0.1.4
+208 verbose rebuildBundles es6-weak-map@0.1.4
+209 verbose rebuildBundles [ 'd', 'es5-ext', 'es6-iterator', 'es6-symbol' ]
+210 info lifecycle es6-weak-map@0.1.4~install: es6-weak-map@0.1.4
+211 silly lifecycle es6-weak-map@0.1.4~install: no script for install, continuing
+212 info lifecycle es6-weak-map@0.1.4~postinstall: es6-weak-map@0.1.4
+213 silly lifecycle es6-weak-map@0.1.4~postinstall: no script for postinstall, continuing
+214 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/d
+215 info lifecycle d@0.1.1~preinstall: d@0.1.1
+216 silly lifecycle d@0.1.1~preinstall: no script for preinstall, continuing
+217 info linkStuff d@0.1.1
+218 silly linkStuff d@0.1.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+219 verbose linkBins d@0.1.1
+220 verbose linkMans d@0.1.1
+221 verbose rebuildBundles d@0.1.1
+222 info lifecycle d@0.1.1~install: d@0.1.1
+223 silly lifecycle d@0.1.1~install: no script for install, continuing
+224 info lifecycle d@0.1.1~postinstall: d@0.1.1
+225 silly lifecycle d@0.1.1~postinstall: no script for postinstall, continuing
+226 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext
+227 info lifecycle es5-ext@0.10.11~preinstall: es5-ext@0.10.11
+228 silly lifecycle es5-ext@0.10.11~preinstall: no script for preinstall, continuing
+229 info linkStuff es5-ext@0.10.11
+230 silly linkStuff es5-ext@0.10.11 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+231 verbose linkBins es5-ext@0.10.11
+232 verbose linkMans es5-ext@0.10.11
+233 verbose rebuildBundles es5-ext@0.10.11
+234 verbose rebuildBundles [ 'es6-iterator', 'es6-symbol' ]
+235 info lifecycle es5-ext@0.10.11~install: es5-ext@0.10.11
+236 silly lifecycle es5-ext@0.10.11~install: no script for install, continuing
+237 info lifecycle es5-ext@0.10.11~postinstall: es5-ext@0.10.11
+238 silly lifecycle es5-ext@0.10.11~postinstall: no script for postinstall, continuing
+239 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator
+240 info lifecycle es6-iterator@2.0.0~preinstall: es6-iterator@2.0.0
+241 silly lifecycle es6-iterator@2.0.0~preinstall: no script for preinstall, continuing
+242 info linkStuff es6-iterator@2.0.0
+243 silly linkStuff es6-iterator@2.0.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules as its parent node_modules
+244 verbose linkBins es6-iterator@2.0.0
+245 verbose linkMans es6-iterator@2.0.0
+246 verbose rebuildBundles es6-iterator@2.0.0
+247 info lifecycle es6-iterator@2.0.0~install: es6-iterator@2.0.0
+248 silly lifecycle es6-iterator@2.0.0~install: no script for install, continuing
+249 info lifecycle es6-iterator@2.0.0~postinstall: es6-iterator@2.0.0
+250 silly lifecycle es6-iterator@2.0.0~postinstall: no script for postinstall, continuing
+251 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol
+252 info lifecycle es6-symbol@3.0.2~preinstall: es6-symbol@3.0.2
+253 silly lifecycle es6-symbol@3.0.2~preinstall: no script for preinstall, continuing
+254 info linkStuff es6-symbol@3.0.2
+255 silly linkStuff es6-symbol@3.0.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules as its parent node_modules
+256 verbose linkBins es6-symbol@3.0.2
+257 verbose linkMans es6-symbol@3.0.2
+258 verbose rebuildBundles es6-symbol@3.0.2
+259 info lifecycle es6-symbol@3.0.2~install: es6-symbol@3.0.2
+260 silly lifecycle es6-symbol@3.0.2~install: no script for install, continuing
+261 info lifecycle es6-symbol@3.0.2~postinstall: es6-symbol@3.0.2
+262 silly lifecycle es6-symbol@3.0.2~postinstall: no script for postinstall, continuing
+263 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator
+264 info lifecycle es6-iterator@0.1.3~preinstall: es6-iterator@0.1.3
+265 silly lifecycle es6-iterator@0.1.3~preinstall: no script for preinstall, continuing
+266 info linkStuff es6-iterator@0.1.3
+267 silly linkStuff es6-iterator@0.1.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+268 verbose linkBins es6-iterator@0.1.3
+269 verbose linkMans es6-iterator@0.1.3
+270 verbose rebuildBundles es6-iterator@0.1.3
+271 info lifecycle es6-iterator@0.1.3~install: es6-iterator@0.1.3
+272 silly lifecycle es6-iterator@0.1.3~install: no script for install, continuing
+273 info lifecycle es6-iterator@0.1.3~postinstall: es6-iterator@0.1.3
+274 silly lifecycle es6-iterator@0.1.3~postinstall: no script for postinstall, continuing
+275 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol
+276 info lifecycle es6-symbol@2.0.1~preinstall: es6-symbol@2.0.1
+277 silly lifecycle es6-symbol@2.0.1~preinstall: no script for preinstall, continuing
+278 info linkStuff es6-symbol@2.0.1
+279 silly linkStuff es6-symbol@2.0.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+280 verbose linkBins es6-symbol@2.0.1
+281 verbose linkMans es6-symbol@2.0.1
+282 verbose rebuildBundles es6-symbol@2.0.1
+283 info lifecycle es6-symbol@2.0.1~install: es6-symbol@2.0.1
+284 silly lifecycle es6-symbol@2.0.1~install: no script for install, continuing
+285 info lifecycle es6-symbol@2.0.1~postinstall: es6-symbol@2.0.1
+286 silly lifecycle es6-symbol@2.0.1~postinstall: no script for postinstall, continuing
+287 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen/node_modules/jquery
+288 info lifecycle jquery@2.1.4~preinstall: jquery@2.1.4
+289 silly lifecycle jquery@2.1.4~preinstall: no script for preinstall, continuing
+290 info linkStuff jquery@2.1.4
+291 silly linkStuff jquery@2.1.4 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/atom-space-pen-views/node_modules/space-pen/node_modules as its parent node_modules
+292 verbose linkBins jquery@2.1.4
+293 verbose linkMans jquery@2.1.4
+294 verbose rebuildBundles jquery@2.1.4
+295 info lifecycle jquery@2.1.4~install: jquery@2.1.4
+296 silly lifecycle jquery@2.1.4~install: no script for install, continuing
+297 info lifecycle jquery@2.1.4~postinstall: jquery@2.1.4
+298 silly lifecycle jquery@2.1.4~postinstall: no script for postinstall, continuing
+299 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio
+300 info lifecycle cheerio@0.15.0~preinstall: cheerio@0.15.0
+301 silly lifecycle cheerio@0.15.0~preinstall: no script for preinstall, continuing
+302 info linkStuff cheerio@0.15.0
+303 silly linkStuff cheerio@0.15.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+304 verbose linkBins cheerio@0.15.0
+305 verbose linkMans cheerio@0.15.0
+306 verbose rebuildBundles cheerio@0.15.0
+307 verbose rebuildBundles [ 'CSSselect', 'entities', 'htmlparser2', 'lodash' ]
+308 info lifecycle cheerio@0.15.0~install: cheerio@0.15.0
+309 silly lifecycle cheerio@0.15.0~install: no script for install, continuing
+310 info lifecycle cheerio@0.15.0~postinstall: cheerio@0.15.0
+311 silly lifecycle cheerio@0.15.0~postinstall: no script for postinstall, continuing
+312 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2
+313 info lifecycle htmlparser2@3.7.3~preinstall: htmlparser2@3.7.3
+314 silly lifecycle htmlparser2@3.7.3~preinstall: no script for preinstall, continuing
+315 info linkStuff htmlparser2@3.7.3
+316 silly linkStuff htmlparser2@3.7.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules as its parent node_modules
+317 verbose linkBins htmlparser2@3.7.3
+318 verbose linkMans htmlparser2@3.7.3
+319 verbose rebuildBundles htmlparser2@3.7.3
+320 verbose rebuildBundles [ 'domelementtype', 'domhandler', 'domutils', 'readable-stream' ]
+321 info lifecycle htmlparser2@3.7.3~install: htmlparser2@3.7.3
+322 silly lifecycle htmlparser2@3.7.3~install: no script for install, continuing
+323 info lifecycle htmlparser2@3.7.3~postinstall: htmlparser2@3.7.3
+324 silly lifecycle htmlparser2@3.7.3~postinstall: no script for postinstall, continuing
+325 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domhandler
+326 info lifecycle domhandler@2.2.1~preinstall: domhandler@2.2.1
+327 silly lifecycle domhandler@2.2.1~preinstall: no script for preinstall, continuing
+328 info linkStuff domhandler@2.2.1
+329 silly linkStuff domhandler@2.2.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules as its parent node_modules
+330 verbose linkBins domhandler@2.2.1
+331 verbose linkMans domhandler@2.2.1
+332 verbose rebuildBundles domhandler@2.2.1
+333 info lifecycle domhandler@2.2.1~install: domhandler@2.2.1
+334 silly lifecycle domhandler@2.2.1~install: no script for install, continuing
+335 info lifecycle domhandler@2.2.1~postinstall: domhandler@2.2.1
+336 silly lifecycle domhandler@2.2.1~postinstall: no script for postinstall, continuing
+337 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domelementtype
+338 info lifecycle domelementtype@1.3.0~preinstall: domelementtype@1.3.0
+339 silly lifecycle domelementtype@1.3.0~preinstall: no script for preinstall, continuing
+340 info linkStuff domelementtype@1.3.0
+341 silly linkStuff domelementtype@1.3.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules as its parent node_modules
+342 verbose linkBins domelementtype@1.3.0
+343 verbose linkMans domelementtype@1.3.0
+344 verbose rebuildBundles domelementtype@1.3.0
+345 info lifecycle domelementtype@1.3.0~install: domelementtype@1.3.0
+346 silly lifecycle domelementtype@1.3.0~install: no script for install, continuing
+347 info lifecycle domelementtype@1.3.0~postinstall: domelementtype@1.3.0
+348 silly lifecycle domelementtype@1.3.0~postinstall: no script for postinstall, continuing
+349 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils
+350 info lifecycle domutils@1.5.1~preinstall: domutils@1.5.1
+351 silly lifecycle domutils@1.5.1~preinstall: no script for preinstall, continuing
+352 info linkStuff domutils@1.5.1
+353 silly linkStuff domutils@1.5.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules as its parent node_modules
+354 verbose linkBins domutils@1.5.1
+355 verbose linkMans domutils@1.5.1
+356 verbose rebuildBundles domutils@1.5.1
+357 verbose rebuildBundles [ 'dom-serializer' ]
+358 info lifecycle domutils@1.5.1~install: domutils@1.5.1
+359 silly lifecycle domutils@1.5.1~install: no script for install, continuing
+360 info lifecycle domutils@1.5.1~postinstall: domutils@1.5.1
+361 silly lifecycle domutils@1.5.1~postinstall: no script for postinstall, continuing
+362 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer
+363 info lifecycle dom-serializer@0.1.0~preinstall: dom-serializer@0.1.0
+364 silly lifecycle dom-serializer@0.1.0~preinstall: no script for preinstall, continuing
+365 info linkStuff dom-serializer@0.1.0
+366 silly linkStuff dom-serializer@0.1.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules as its parent node_modules
+367 verbose linkBins dom-serializer@0.1.0
+368 verbose linkMans dom-serializer@0.1.0
+369 verbose rebuildBundles dom-serializer@0.1.0
+370 verbose rebuildBundles [ 'domelementtype', 'entities' ]
+371 info lifecycle dom-serializer@0.1.0~install: dom-serializer@0.1.0
+372 silly lifecycle dom-serializer@0.1.0~install: no script for install, continuing
+373 info lifecycle dom-serializer@0.1.0~postinstall: dom-serializer@0.1.0
+374 silly lifecycle dom-serializer@0.1.0~postinstall: no script for postinstall, continuing
+375 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/domelementtype
+376 info lifecycle domelementtype@1.1.3~preinstall: domelementtype@1.1.3
+377 silly lifecycle domelementtype@1.1.3~preinstall: no script for preinstall, continuing
+378 info linkStuff domelementtype@1.1.3
+379 silly linkStuff domelementtype@1.1.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules as its parent node_modules
+380 verbose linkBins domelementtype@1.1.3
+381 verbose linkMans domelementtype@1.1.3
+382 verbose rebuildBundles domelementtype@1.1.3
+383 info lifecycle domelementtype@1.1.3~install: domelementtype@1.1.3
+384 silly lifecycle domelementtype@1.1.3~install: no script for install, continuing
+385 info lifecycle domelementtype@1.1.3~postinstall: domelementtype@1.1.3
+386 silly lifecycle domelementtype@1.1.3~postinstall: no script for postinstall, continuing
+387 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules/entities
+388 info lifecycle entities@1.1.1~preinstall: entities@1.1.1
+389 silly lifecycle entities@1.1.1~preinstall: no script for preinstall, continuing
+390 info linkStuff entities@1.1.1
+391 silly linkStuff entities@1.1.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/domutils/node_modules/dom-serializer/node_modules as its parent node_modules
+392 verbose linkBins entities@1.1.1
+393 verbose linkMans entities@1.1.1
+394 verbose rebuildBundles entities@1.1.1
+395 info lifecycle entities@1.1.1~install: entities@1.1.1
+396 silly lifecycle entities@1.1.1~install: no script for install, continuing
+397 info lifecycle entities@1.1.1~postinstall: entities@1.1.1
+398 silly lifecycle entities@1.1.1~postinstall: no script for postinstall, continuing
+399 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream
+400 info lifecycle readable-stream@1.1.14~preinstall: readable-stream@1.1.14
+401 silly lifecycle readable-stream@1.1.14~preinstall: no script for preinstall, continuing
+402 info linkStuff readable-stream@1.1.14
+403 silly linkStuff readable-stream@1.1.14 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules as its parent node_modules
+404 verbose linkBins readable-stream@1.1.14
+405 verbose linkMans readable-stream@1.1.14
+406 verbose rebuildBundles readable-stream@1.1.14
+407 verbose rebuildBundles [ 'core-util-is', 'inherits', 'isarray', 'string_decoder' ]
+408 info lifecycle readable-stream@1.1.14~install: readable-stream@1.1.14
+409 silly lifecycle readable-stream@1.1.14~install: no script for install, continuing
+410 info lifecycle readable-stream@1.1.14~postinstall: readable-stream@1.1.14
+411 silly lifecycle readable-stream@1.1.14~postinstall: no script for postinstall, continuing
+412 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is
+413 info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+414 silly lifecycle core-util-is@1.0.2~preinstall: no script for preinstall, continuing
+415 info linkStuff core-util-is@1.0.2
+416 silly linkStuff core-util-is@1.0.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules as its parent node_modules
+417 verbose linkBins core-util-is@1.0.2
+418 verbose linkMans core-util-is@1.0.2
+419 verbose rebuildBundles core-util-is@1.0.2
+420 info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+421 silly lifecycle core-util-is@1.0.2~install: no script for install, continuing
+422 info lifecycle core-util-is@1.0.2~postinstall: core-util-is@1.0.2
+423 silly lifecycle core-util-is@1.0.2~postinstall: no script for postinstall, continuing
+424 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray
+425 info lifecycle isarray@0.0.1~preinstall: isarray@0.0.1
+426 silly lifecycle isarray@0.0.1~preinstall: no script for preinstall, continuing
+427 info linkStuff isarray@0.0.1
+428 silly linkStuff isarray@0.0.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules as its parent node_modules
+429 verbose linkBins isarray@0.0.1
+430 verbose linkMans isarray@0.0.1
+431 verbose rebuildBundles isarray@0.0.1
+432 info lifecycle isarray@0.0.1~install: isarray@0.0.1
+433 silly lifecycle isarray@0.0.1~install: no script for install, continuing
+434 info lifecycle isarray@0.0.1~postinstall: isarray@0.0.1
+435 silly lifecycle isarray@0.0.1~postinstall: no script for postinstall, continuing
+436 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder
+437 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+438 silly lifecycle string_decoder@0.10.31~preinstall: no script for preinstall, continuing
+439 info linkStuff string_decoder@0.10.31
+440 silly linkStuff string_decoder@0.10.31 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules as its parent node_modules
+441 verbose linkBins string_decoder@0.10.31
+442 verbose linkMans string_decoder@0.10.31
+443 verbose rebuildBundles string_decoder@0.10.31
+444 info lifecycle string_decoder@0.10.31~install: string_decoder@0.10.31
+445 silly lifecycle string_decoder@0.10.31~install: no script for install, continuing
+446 info lifecycle string_decoder@0.10.31~postinstall: string_decoder@0.10.31
+447 silly lifecycle string_decoder@0.10.31~postinstall: no script for postinstall, continuing
+448 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits
+449 info lifecycle inherits@2.0.1~preinstall: inherits@2.0.1
+450 silly lifecycle inherits@2.0.1~preinstall: no script for preinstall, continuing
+451 info linkStuff inherits@2.0.1
+452 silly linkStuff inherits@2.0.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/htmlparser2/node_modules/readable-stream/node_modules as its parent node_modules
+453 verbose linkBins inherits@2.0.1
+454 verbose linkMans inherits@2.0.1
+455 verbose rebuildBundles inherits@2.0.1
+456 info lifecycle inherits@2.0.1~install: inherits@2.0.1
+457 silly lifecycle inherits@2.0.1~install: no script for install, continuing
+458 info lifecycle inherits@2.0.1~postinstall: inherits@2.0.1
+459 silly lifecycle inherits@2.0.1~postinstall: no script for postinstall, continuing
+460 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/entities
+461 info lifecycle entities@1.0.0~preinstall: entities@1.0.0
+462 silly lifecycle entities@1.0.0~preinstall: no script for preinstall, continuing
+463 info linkStuff entities@1.0.0
+464 silly linkStuff entities@1.0.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules as its parent node_modules
+465 verbose linkBins entities@1.0.0
+466 verbose linkMans entities@1.0.0
+467 verbose rebuildBundles entities@1.0.0
+468 info lifecycle entities@1.0.0~install: entities@1.0.0
+469 silly lifecycle entities@1.0.0~install: no script for install, continuing
+470 info lifecycle entities@1.0.0~postinstall: entities@1.0.0
+471 silly lifecycle entities@1.0.0~postinstall: no script for postinstall, continuing
+472 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect
+473 info lifecycle CSSselect@0.4.1~preinstall: CSSselect@0.4.1
+474 silly lifecycle CSSselect@0.4.1~preinstall: no script for preinstall, continuing
+475 info linkStuff CSSselect@0.4.1
+476 silly linkStuff CSSselect@0.4.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules as its parent node_modules
+477 verbose linkBins CSSselect@0.4.1
+478 verbose linkMans CSSselect@0.4.1
+479 verbose rebuildBundles CSSselect@0.4.1
+480 verbose rebuildBundles [ 'CSSwhat', 'domutils' ]
+481 info lifecycle CSSselect@0.4.1~install: CSSselect@0.4.1
+482 silly lifecycle CSSselect@0.4.1~install: no script for install, continuing
+483 info lifecycle CSSselect@0.4.1~postinstall: CSSselect@0.4.1
+484 silly lifecycle CSSselect@0.4.1~postinstall: no script for postinstall, continuing
+485 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/CSSwhat
+486 info lifecycle CSSwhat@0.4.7~preinstall: CSSwhat@0.4.7
+487 silly lifecycle CSSwhat@0.4.7~preinstall: no script for preinstall, continuing
+488 info linkStuff CSSwhat@0.4.7
+489 silly linkStuff CSSwhat@0.4.7 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules as its parent node_modules
+490 verbose linkBins CSSwhat@0.4.7
+491 verbose linkMans CSSwhat@0.4.7
+492 verbose rebuildBundles CSSwhat@0.4.7
+493 info lifecycle CSSwhat@0.4.7~install: CSSwhat@0.4.7
+494 silly lifecycle CSSwhat@0.4.7~install: no script for install, continuing
+495 info lifecycle CSSwhat@0.4.7~postinstall: CSSwhat@0.4.7
+496 silly lifecycle CSSwhat@0.4.7~postinstall: no script for postinstall, continuing
+497 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils
+498 info lifecycle domutils@1.4.3~preinstall: domutils@1.4.3
+499 silly lifecycle domutils@1.4.3~preinstall: no script for preinstall, continuing
+500 info linkStuff domutils@1.4.3
+501 silly linkStuff domutils@1.4.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules as its parent node_modules
+502 verbose linkBins domutils@1.4.3
+503 verbose linkMans domutils@1.4.3
+504 verbose rebuildBundles domutils@1.4.3
+505 verbose rebuildBundles [ 'domelementtype' ]
+506 info lifecycle domutils@1.4.3~install: domutils@1.4.3
+507 silly lifecycle domutils@1.4.3~install: no script for install, continuing
+508 info lifecycle domutils@1.4.3~postinstall: domutils@1.4.3
+509 silly lifecycle domutils@1.4.3~postinstall: no script for postinstall, continuing
+510 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils/node_modules/domelementtype
+511 info lifecycle domelementtype@1.3.0~preinstall: domelementtype@1.3.0
+512 silly lifecycle domelementtype@1.3.0~preinstall: no script for preinstall, continuing
+513 info linkStuff domelementtype@1.3.0
+514 silly linkStuff domelementtype@1.3.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/CSSselect/node_modules/domutils/node_modules as its parent node_modules
+515 verbose linkBins domelementtype@1.3.0
+516 verbose linkMans domelementtype@1.3.0
+517 verbose rebuildBundles domelementtype@1.3.0
+518 info lifecycle domelementtype@1.3.0~install: domelementtype@1.3.0
+519 silly lifecycle domelementtype@1.3.0~install: no script for install, continuing
+520 info lifecycle domelementtype@1.3.0~postinstall: domelementtype@1.3.0
+521 silly lifecycle domelementtype@1.3.0~postinstall: no script for postinstall, continuing
+522 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules/lodash
+523 info lifecycle lodash@2.4.2~preinstall: lodash@2.4.2
+524 silly lifecycle lodash@2.4.2~preinstall: no script for preinstall, continuing
+525 info linkStuff lodash@2.4.2
+526 silly linkStuff lodash@2.4.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/cheerio/node_modules as its parent node_modules
+527 verbose linkBins lodash@2.4.2
+528 verbose linkMans lodash@2.4.2
+529 verbose rebuildBundles lodash@2.4.2
+530 info lifecycle lodash@2.4.2~install: lodash@2.4.2
+531 silly lifecycle lodash@2.4.2~install: no script for install, continuing
+532 info lifecycle lodash@2.4.2~postinstall: lodash@2.4.2
+533 silly lifecycle lodash@2.4.2~postinstall: no script for postinstall, continuing
+534 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus
+535 info lifecycle fs-plus@2.9.1~preinstall: fs-plus@2.9.1
+536 silly lifecycle fs-plus@2.9.1~preinstall: no script for preinstall, continuing
+537 info linkStuff fs-plus@2.9.1
+538 silly linkStuff fs-plus@2.9.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+539 verbose linkBins fs-plus@2.9.1
+540 verbose linkMans fs-plus@2.9.1
+541 verbose rebuildBundles fs-plus@2.9.1
+542 verbose rebuildBundles [ '.bin', 'async', 'mkdirp', 'rimraf' ]
+543 info lifecycle fs-plus@2.9.1~install: fs-plus@2.9.1
+544 silly lifecycle fs-plus@2.9.1~install: no script for install, continuing
+545 info lifecycle fs-plus@2.9.1~postinstall: fs-plus@2.9.1
+546 silly lifecycle fs-plus@2.9.1~postinstall: no script for postinstall, continuing
+547 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/mkdirp
+548 info lifecycle mkdirp@0.3.5~preinstall: mkdirp@0.3.5
+549 silly lifecycle mkdirp@0.3.5~preinstall: no script for preinstall, continuing
+550 info linkStuff mkdirp@0.3.5
+551 silly linkStuff mkdirp@0.3.5 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules as its parent node_modules
+552 verbose linkBins mkdirp@0.3.5
+553 verbose linkMans mkdirp@0.3.5
+554 verbose rebuildBundles mkdirp@0.3.5
+555 info lifecycle mkdirp@0.3.5~install: mkdirp@0.3.5
+556 silly lifecycle mkdirp@0.3.5~install: no script for install, continuing
+557 info lifecycle mkdirp@0.3.5~postinstall: mkdirp@0.3.5
+558 silly lifecycle mkdirp@0.3.5~postinstall: no script for postinstall, continuing
+559 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/rimraf
+560 info lifecycle rimraf@2.2.8~preinstall: rimraf@2.2.8
+561 silly lifecycle rimraf@2.2.8~preinstall: no script for preinstall, continuing
+562 info linkStuff rimraf@2.2.8
+563 silly linkStuff rimraf@2.2.8 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules as its parent node_modules
+564 verbose linkBins rimraf@2.2.8
+565 verbose link bins [ { rimraf: './bin.js' },
+565 verbose link bins   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/.bin',
+565 verbose link bins   false ]
+566 verbose linkMans rimraf@2.2.8
+567 verbose rebuildBundles rimraf@2.2.8
+568 info lifecycle rimraf@2.2.8~install: rimraf@2.2.8
+569 silly lifecycle rimraf@2.2.8~install: no script for install, continuing
+570 info lifecycle rimraf@2.2.8~postinstall: rimraf@2.2.8
+571 silly lifecycle rimraf@2.2.8~postinstall: no script for postinstall, continuing
+572 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules/async
+573 info lifecycle async@0.2.10~preinstall: async@0.2.10
+574 silly lifecycle async@0.2.10~preinstall: no script for preinstall, continuing
+575 info linkStuff async@0.2.10
+576 silly linkStuff async@0.2.10 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/fs-plus/node_modules as its parent node_modules
+577 verbose linkBins async@0.2.10
+578 verbose linkMans async@0.2.10
+579 verbose rebuildBundles async@0.2.10
+580 info lifecycle async@0.2.10~install: async@0.2.10
+581 silly lifecycle async@0.2.10~install: no script for install, continuing
+582 info lifecycle async@0.2.10~postinstall: async@0.2.10
+583 silly lifecycle async@0.2.10~postinstall: no script for postinstall, continuing
+584 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights
+585 info lifecycle highlights@1.3.1~preinstall: highlights@1.3.1
+586 silly lifecycle highlights@1.3.1~preinstall: no script for preinstall, continuing
+587 info linkStuff highlights@1.3.1
+588 silly linkStuff highlights@1.3.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules as its parent node_modules
+589 verbose linkBins highlights@1.3.1
+590 verbose link bins [ { highlights: 'bin/highlights' },
+590 verbose link bins   '/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/.bin',
+590 verbose link bins   false ]
+591 verbose linkMans highlights@1.3.1
+592 verbose rebuildBundles highlights@1.3.1
+593 verbose rebuildBundles [ '.bin',
+593 verbose rebuildBundles   'first-mate',
+593 verbose rebuildBundles   'first-mate-select-grammar',
+593 verbose rebuildBundles   'once',
+593 verbose rebuildBundles   'optimist',
+593 verbose rebuildBundles   'season' ]
+594 info lifecycle highlights@1.3.1~install: highlights@1.3.1
+595 silly lifecycle highlights@1.3.1~install: no script for install, continuing
+596 info lifecycle highlights@1.3.1~postinstall: highlights@1.3.1
+597 silly lifecycle highlights@1.3.1~postinstall: no script for postinstall, continuing
+598 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate
+599 info lifecycle first-mate@5.1.1~preinstall: first-mate@5.1.1
+600 silly lifecycle first-mate@5.1.1~preinstall: no script for preinstall, continuing
+601 info linkStuff first-mate@5.1.1
+602 silly linkStuff first-mate@5.1.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules as its parent node_modules
+603 verbose linkBins first-mate@5.1.1
+604 verbose linkMans first-mate@5.1.1
+605 verbose rebuildBundles first-mate@5.1.1
+606 verbose rebuildBundles [ 'emissary', 'event-kit', 'oniguruma' ]
+607 info lifecycle first-mate@5.1.1~install: first-mate@5.1.1
+608 silly lifecycle first-mate@5.1.1~install: no script for install, continuing
+609 info lifecycle first-mate@5.1.1~postinstall: first-mate@5.1.1
+610 silly lifecycle first-mate@5.1.1~postinstall: no script for postinstall, continuing
+611 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary
+612 info lifecycle emissary@1.3.3~preinstall: emissary@1.3.3
+613 silly lifecycle emissary@1.3.3~preinstall: no script for preinstall, continuing
+614 info linkStuff emissary@1.3.3
+615 silly linkStuff emissary@1.3.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules as its parent node_modules
+616 verbose linkBins emissary@1.3.3
+617 verbose linkMans emissary@1.3.3
+618 verbose rebuildBundles emissary@1.3.3
+619 verbose rebuildBundles [ 'es6-weak-map', 'mixto', 'property-accessors' ]
+620 info lifecycle emissary@1.3.3~install: emissary@1.3.3
+621 silly lifecycle emissary@1.3.3~install: no script for install, continuing
+622 info lifecycle emissary@1.3.3~postinstall: emissary@1.3.3
+623 silly lifecycle emissary@1.3.3~postinstall: no script for postinstall, continuing
+624 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/mixto
+625 info lifecycle mixto@1.0.0~preinstall: mixto@1.0.0
+626 silly lifecycle mixto@1.0.0~preinstall: no script for preinstall, continuing
+627 info linkStuff mixto@1.0.0
+628 silly linkStuff mixto@1.0.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules as its parent node_modules
+629 verbose linkBins mixto@1.0.0
+630 verbose linkMans mixto@1.0.0
+631 verbose rebuildBundles mixto@1.0.0
+632 info lifecycle mixto@1.0.0~install: mixto@1.0.0
+633 silly lifecycle mixto@1.0.0~install: no script for install, continuing
+634 info lifecycle mixto@1.0.0~postinstall: mixto@1.0.0
+635 silly lifecycle mixto@1.0.0~postinstall: no script for postinstall, continuing
+636 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/property-accessors
+637 info lifecycle property-accessors@1.1.3~preinstall: property-accessors@1.1.3
+638 silly lifecycle property-accessors@1.1.3~preinstall: no script for preinstall, continuing
+639 info linkStuff property-accessors@1.1.3
+640 silly linkStuff property-accessors@1.1.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules as its parent node_modules
+641 verbose linkBins property-accessors@1.1.3
+642 verbose linkMans property-accessors@1.1.3
+643 verbose rebuildBundles property-accessors@1.1.3
+644 info lifecycle property-accessors@1.1.3~install: property-accessors@1.1.3
+645 silly lifecycle property-accessors@1.1.3~install: no script for install, continuing
+646 info lifecycle property-accessors@1.1.3~postinstall: property-accessors@1.1.3
+647 silly lifecycle property-accessors@1.1.3~postinstall: no script for postinstall, continuing
+648 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map
+649 info lifecycle es6-weak-map@0.1.4~preinstall: es6-weak-map@0.1.4
+650 silly lifecycle es6-weak-map@0.1.4~preinstall: no script for preinstall, continuing
+651 info linkStuff es6-weak-map@0.1.4
+652 silly linkStuff es6-weak-map@0.1.4 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules as its parent node_modules
+653 verbose linkBins es6-weak-map@0.1.4
+654 verbose linkMans es6-weak-map@0.1.4
+655 verbose rebuildBundles es6-weak-map@0.1.4
+656 verbose rebuildBundles [ 'd', 'es5-ext', 'es6-iterator', 'es6-symbol' ]
+657 info lifecycle es6-weak-map@0.1.4~install: es6-weak-map@0.1.4
+658 silly lifecycle es6-weak-map@0.1.4~install: no script for install, continuing
+659 info lifecycle es6-weak-map@0.1.4~postinstall: es6-weak-map@0.1.4
+660 silly lifecycle es6-weak-map@0.1.4~postinstall: no script for postinstall, continuing
+661 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/d
+662 info lifecycle d@0.1.1~preinstall: d@0.1.1
+663 silly lifecycle d@0.1.1~preinstall: no script for preinstall, continuing
+664 info linkStuff d@0.1.1
+665 silly linkStuff d@0.1.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+666 verbose linkBins d@0.1.1
+667 verbose linkMans d@0.1.1
+668 verbose rebuildBundles d@0.1.1
+669 info lifecycle d@0.1.1~install: d@0.1.1
+670 silly lifecycle d@0.1.1~install: no script for install, continuing
+671 info lifecycle d@0.1.1~postinstall: d@0.1.1
+672 silly lifecycle d@0.1.1~postinstall: no script for postinstall, continuing
+673 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext
+674 info lifecycle es5-ext@0.10.11~preinstall: es5-ext@0.10.11
+675 silly lifecycle es5-ext@0.10.11~preinstall: no script for preinstall, continuing
+676 info linkStuff es5-ext@0.10.11
+677 silly linkStuff es5-ext@0.10.11 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+678 verbose linkBins es5-ext@0.10.11
+679 verbose linkMans es5-ext@0.10.11
+680 verbose rebuildBundles es5-ext@0.10.11
+681 verbose rebuildBundles [ 'es6-iterator', 'es6-symbol' ]
+682 info lifecycle es5-ext@0.10.11~install: es5-ext@0.10.11
+683 silly lifecycle es5-ext@0.10.11~install: no script for install, continuing
+684 info lifecycle es5-ext@0.10.11~postinstall: es5-ext@0.10.11
+685 silly lifecycle es5-ext@0.10.11~postinstall: no script for postinstall, continuing
+686 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator
+687 info lifecycle es6-iterator@2.0.0~preinstall: es6-iterator@2.0.0
+688 silly lifecycle es6-iterator@2.0.0~preinstall: no script for preinstall, continuing
+689 info linkStuff es6-iterator@2.0.0
+690 silly linkStuff es6-iterator@2.0.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules as its parent node_modules
+691 verbose linkBins es6-iterator@2.0.0
+692 verbose linkMans es6-iterator@2.0.0
+693 verbose rebuildBundles es6-iterator@2.0.0
+694 info lifecycle es6-iterator@2.0.0~install: es6-iterator@2.0.0
+695 silly lifecycle es6-iterator@2.0.0~install: no script for install, continuing
+696 info lifecycle es6-iterator@2.0.0~postinstall: es6-iterator@2.0.0
+697 silly lifecycle es6-iterator@2.0.0~postinstall: no script for postinstall, continuing
+698 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol
+699 info lifecycle es6-symbol@3.0.2~preinstall: es6-symbol@3.0.2
+700 silly lifecycle es6-symbol@3.0.2~preinstall: no script for preinstall, continuing
+701 info linkStuff es6-symbol@3.0.2
+702 silly linkStuff es6-symbol@3.0.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules as its parent node_modules
+703 verbose linkBins es6-symbol@3.0.2
+704 verbose linkMans es6-symbol@3.0.2
+705 verbose rebuildBundles es6-symbol@3.0.2
+706 info lifecycle es6-symbol@3.0.2~install: es6-symbol@3.0.2
+707 silly lifecycle es6-symbol@3.0.2~install: no script for install, continuing
+708 info lifecycle es6-symbol@3.0.2~postinstall: es6-symbol@3.0.2
+709 silly lifecycle es6-symbol@3.0.2~postinstall: no script for postinstall, continuing
+710 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-iterator
+711 info lifecycle es6-iterator@0.1.3~preinstall: es6-iterator@0.1.3
+712 silly lifecycle es6-iterator@0.1.3~preinstall: no script for preinstall, continuing
+713 info linkStuff es6-iterator@0.1.3
+714 silly linkStuff es6-iterator@0.1.3 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+715 verbose linkBins es6-iterator@0.1.3
+716 verbose linkMans es6-iterator@0.1.3
+717 verbose rebuildBundles es6-iterator@0.1.3
+718 info lifecycle es6-iterator@0.1.3~install: es6-iterator@0.1.3
+719 silly lifecycle es6-iterator@0.1.3~install: no script for install, continuing
+720 info lifecycle es6-iterator@0.1.3~postinstall: es6-iterator@0.1.3
+721 silly lifecycle es6-iterator@0.1.3~postinstall: no script for postinstall, continuing
+722 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules/es6-symbol
+723 info lifecycle es6-symbol@2.0.1~preinstall: es6-symbol@2.0.1
+724 silly lifecycle es6-symbol@2.0.1~preinstall: no script for preinstall, continuing
+725 info linkStuff es6-symbol@2.0.1
+726 silly linkStuff es6-symbol@2.0.1 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/emissary/node_modules/es6-weak-map/node_modules as its parent node_modules
+727 verbose linkBins es6-symbol@2.0.1
+728 verbose linkMans es6-symbol@2.0.1
+729 verbose rebuildBundles es6-symbol@2.0.1
+730 info lifecycle es6-symbol@2.0.1~install: es6-symbol@2.0.1
+731 silly lifecycle es6-symbol@2.0.1~install: no script for install, continuing
+732 info lifecycle es6-symbol@2.0.1~postinstall: es6-symbol@2.0.1
+733 silly lifecycle es6-symbol@2.0.1~postinstall: no script for postinstall, continuing
+734 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/event-kit
+735 info lifecycle event-kit@1.5.0~preinstall: event-kit@1.5.0
+736 silly lifecycle event-kit@1.5.0~preinstall: no script for preinstall, continuing
+737 info linkStuff event-kit@1.5.0
+738 silly linkStuff event-kit@1.5.0 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules as its parent node_modules
+739 verbose linkBins event-kit@1.5.0
+740 verbose linkMans event-kit@1.5.0
+741 verbose rebuildBundles event-kit@1.5.0
+742 info lifecycle event-kit@1.5.0~install: event-kit@1.5.0
+743 silly lifecycle event-kit@1.5.0~install: no script for install, continuing
+744 info lifecycle event-kit@1.5.0~postinstall: event-kit@1.5.0
+745 silly lifecycle event-kit@1.5.0~postinstall: no script for postinstall, continuing
+746 info build /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma
+747 info lifecycle oniguruma@5.1.2~preinstall: oniguruma@5.1.2
+748 silly lifecycle oniguruma@5.1.2~preinstall: no script for preinstall, continuing
+749 info linkStuff oniguruma@5.1.2
+750 silly linkStuff oniguruma@5.1.2 has /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules as its parent node_modules
+751 verbose linkBins oniguruma@5.1.2
+752 verbose linkMans oniguruma@5.1.2
+753 verbose rebuildBundles oniguruma@5.1.2
+754 verbose rebuildBundles [ 'nan' ]
+755 info lifecycle oniguruma@5.1.2~install: oniguruma@5.1.2
+756 verbose lifecycle oniguruma@5.1.2~install: unsafe-perm in lifecycle true
+757 verbose lifecycle oniguruma@5.1.2~install: PATH: /Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/node-gyp-bin:/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma/node_modules/.bin:/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/.bin:/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/.bin:/Users/igawataiichi/.atom/packages/markdown-preview/node_modules/.bin:/Applications/Atom.app/Contents/Resources/app/apm/bin:/Applications/Atom.app/Contents/Resources/app/apm/bin:/Users/igawataiichi/.rbenv/shims:/Users/igawataiichi/.rbenv/bin:/usr/local/heroku/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Users/igawataiichi/go/third-party/bin:/Users/igawataiichi/go/my-project/bin:/Users/igawataiichi/.nodebrew/current/bin:/Users/igawataiichi/bin:/Users/igawataiichi/.nodebrew/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle-client
+758 verbose lifecycle oniguruma@5.1.2~install: CWD: /Users/igawataiichi/.atom/packages/markdown-preview/node_modules/highlights/node_modules/first-mate/node_modules/oniguruma
+759 silly lifecycle oniguruma@5.1.2~install: Args: [ '-c', 'node-gyp rebuild' ]
+760 silly lifecycle oniguruma@5.1.2~install: Returned: code: 1  signal: null
+761 info lifecycle oniguruma@5.1.2~install: Failed to exec install script
+762 verbose stack Error: oniguruma@5.1.2 install: `node-gyp rebuild`
+762 verbose stack Exit status 1
+762 verbose stack     at EventEmitter.<anonymous> (/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/lib/utils/lifecycle.js:242:16)
+762 verbose stack     at emitTwo (events.js:87:13)
+762 verbose stack     at EventEmitter.emit (events.js:172:7)
+762 verbose stack     at ChildProcess.<anonymous> (/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/lib/utils/spawn.js:40:14)
+762 verbose stack     at emitTwo (events.js:87:13)
+762 verbose stack     at ChildProcess.emit (events.js:172:7)
+762 verbose stack     at maybeClose (internal/child_process.js:827:16)
+762 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+763 verbose pkgid oniguruma@5.1.2
+764 verbose cwd /Users/igawataiichi/.atom/packages/markdown-preview
+765 error Darwin 16.4.0
+766 error argv "/Applications/Atom.app/Contents/Resources/app/apm/bin/node" "/Applications/Atom.app/Contents/Resources/app/apm/node_modules/npm/bin/npm-cli.js" "--globalconfig" "/Users/igawataiichi/.atom/.apm/.apmrc" "--userconfig" "/Users/igawataiichi/.atom/.apmrc" "rebuild" "--runtime=electron" "--target=1.3.13" "--arch=x64"
+767 error node v4.4.5
+768 error npm  v3.10.5
+769 error code ELIFECYCLE
+770 error oniguruma@5.1.2 install: `node-gyp rebuild`
+770 error Exit status 1
+771 error Failed at the oniguruma@5.1.2 install script 'node-gyp rebuild'.
+771 error Make sure you have the latest version of node.js and npm installed.
+771 error If you do, this is most likely a problem with the oniguruma package,
+771 error not with npm itself.
+771 error Tell the author that this fails on your system:
+771 error     node-gyp rebuild
+771 error You can get information on how to open an issue for this project with:
+771 error     npm bugs oniguruma
+771 error Or if that isn't available, you can get their info via:
+771 error     npm owner ls oniguruma
+771 error There is likely additional logging output above.
+772 verbose exit [ 1, true ]

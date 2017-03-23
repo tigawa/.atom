@@ -1,0 +1,38 @@
+{
+  "name": "python-snippets",
+  "version": "1.9.0",
+  "description": "Python Snippets for Atom",
+  "keywords": [
+    "python",
+    "tkinter",
+    "snippets"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiultra/python-snippets.git"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# Python Snippets for Atom\n\n## Install :\n\n`apm install python-snippets`\n\n#Note :fire:\n\nThis package is Under considerable development. Please don't Be too excited. Also You can help if you want to. :smile:\n\n## Features\n\n- Some important python 3.0 snippets of regular usage.\n\n- Also includes tkinter snippets for gui-programming in python.\n\n\n## Snippets list\n\n> The tkinter snippets assume that you have imported tkinter as tk\n> `import tkinter as tk`\n\n```css\n    #  Normal missing Functionality\n\n  'def'\n    'body': '''\n    def ${1:fname}(${2:arg}):\n        ${3:pass}\n    '''\n  'defi'\n    'body': '''\n    def __init__(self, ${1:arg}):\n        ${2:pass}\n    '''\n  'print'\n    'body': 'print($1)'\n\n\n    # tkinter snippets\n  'button'\n    'body': 'tk.Button(${1:root}, text=\"$2\")'\n\n  'label'\n    'body': 'tk.Label(${1:root}, text=\"$2\")'\n\n  'frame'\n    'body': 'tk.Frame(${1:root})'\n\n  'entry'\n    'body': 'tk.Entry(${1:root})'\n\n  'grid'\n    'body': 'grid(row=$1, colomn=$2)'\n\n  'sticky'\n    'body': 'sticky=tk.$1'\n\n  'checkbutton'\n    'body': 'tk.Checkbutton(${1:root}, text=\"$2\")'\n\n  'mainloop'\n    'body': 'mainloop()'\n```\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/adiultra/python-snippets/issues"
+  },
+  "homepage": "https://github.com/adiultra/python-snippets#readme",
+  "_id": "python-snippets@1.9.0",
+  "_shasum": "b2f493fddf59e2fd3c64e42f2b84c186e82aa389",
+  "_resolved": "file:../d-11677-10103-1bt2tfm/package.tgz",
+  "_from": "../d-11677-10103-1bt2tfm/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

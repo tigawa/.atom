@@ -1,13 +1,11 @@
-# Refactoring Status: 90%
-{CompositeDisposable, Disposable, Emitter} = require 'atom'
+{CompositeDisposable, Disposable, Emitter, Range} = require 'atom'
 _ = require 'underscore-plus'
 path = require 'path'
 
-History  = null
-Flasher  = null
+History = require './history'
 settings = require './settings'
 
-ignoreCommands = [
+defaultIgnoreCommands = [
   'cursor-history:next',
   'cursor-history:prev',
   'cursor-history:next-within-editor',
@@ -15,55 +13,85 @@ ignoreCommands = [
   'cursor-history:clear',
 ]
 
+isTextEditor = (object) ->
+  atom.workspace.isTextEditor(object)
+
+findEditorForPaneByURI = (pane, URI) ->
+  for item in pane.getItems() when isTextEditor(item)
+    return item if item.getURI() is URI
+
+pointDelta = (pointA, pointB) ->
+  if pointA.isGreaterThan(pointB)
+    pointA.traversalFrom(pointB)
+  else
+    pointB.traversalFrom(pointA)
+
+closestTextEditor = (target) ->
+  target?.closest?('atom-text-editor')?.getModel()
+
+class Location
+  constructor: (@type, @editor) ->
+    @point = @editor.getCursorBufferPosition()
+    @URI = @editor.getURI()
+
 module.exports =
   config: settings.config
   history: null
   subscriptions: null
+  ignoreCommands: null
+
+  onDidChangeLocation: (fn) -> @emitter.on('did-change-location', fn)
+  onDidUnfocus: (fn) -> @emitter.on('did-unfocus', fn)
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    History  = require './history'
-    Flasher  = require './flasher'
     @history = new History
     @emitter = new Emitter
 
-    @subscriptions.add atom.commands.add 'atom-workspace',
-      'cursor-history:next':  => @jump('next')
-      'cursor-history:prev':  => @jump('prev')
-      'cursor-history:next-within-editor': => @jump('next', withinEditor: true)
-      'cursor-history:prev-within-editor': => @jump('prev', withinEditor: true)
+    jump = @jump.bind(this)
+    @subscriptions.add atom.commands.add 'atom-text-editor',
+      'cursor-history:next': -> jump(@getModel(), 'next')
+      'cursor-history:prev': -> jump(@getModel(), 'prev')
+      'cursor-history:next-within-editor': -> jump(@getModel(), 'next', withinEditor: true)
+      'cursor-history:prev-within-editor': -> jump(@getModel(), 'prev', withinEditor: true)
       'cursor-history:clear': => @history.clear()
       'cursor-history:toggle-debug': -> settings.toggle 'debug', log: true
 
     @observeMouse()
     @observeCommands()
+    @observeSettings()
 
     @onDidChangeLocation ({oldLocation, newLocation}) =>
-      if @needRemember(oldLocation.point, newLocation.point)
-        @saveHistory oldLocation, subject: "Cursor moved"
+      {row, column} = pointDelta(oldLocation.point, newLocation.point)
+      if (row > settings.get('rowDeltaToRemember')) or (row is 0 and column > settings.get('columnDeltaToRemember'))
+        @saveHistory(oldLocation, subject: "Cursor moved")
 
-  onDidChangeLocation: (fn) ->
-    @emitter.on 'did-change-location', fn
+    @onDidUnfocus ({oldLocation}) =>
+      @saveHistory(oldLocation, subject: "Save on focus lost")
 
   deactivate: ->
+    settings.destroy()
     @subscriptions.dispose()
-    @subscriptions = null
-    @history?.destroy()
-    @history = null
+    @history.destroy()
+    {@history, @subscriptions} = {}
 
-  needRemember: (oldPoint, newPoint) ->
-    Math.abs(oldPoint.row - newPoint.row) > settings.get('rowDeltaToRemember')
+  observeSettings: ->
+    settings.observe 'keepSingleEntryPerBuffer', (newValue) =>
+      if newValue
+        @history.uniqueByBuffer()
+
+    settings.observe 'ignoreCommands', (newValue) =>
+      @ignoreCommands = defaultIgnoreCommands.concat(newValue)
 
   saveHistory: (location, {subject, setIndexToHead}={}) ->
-    @history.add location, {setIndexToHead}
-    if settings.get('debug')
-      @logHistory "#{subject} [#{location.type}]"
+    @history.add(location, {setIndexToHead})
+    @logHistory("#{subject} [#{location.type}]") if settings.get('debug')
 
   # Mouse handling is not primal purpose of this package
   # I dont' use mouse basically while coding.
-  # So keep codebase minimal and simple,
-  #  I don't use editor::onDidChangeCursorPosition() to track
-  #  cursor position change caused by mouse click.
+  # So to keep codebase minimal and simple,
+  #  I don't use editor::onDidChangeCursorPosition() to track cursor position change
+  #  caused by mouse click.
   #
   # When mouse clicked, cursor position is updated by atom core using setCursorScreenPosition()
   # To track cursor position change caused by mouse click, I use mousedown event.
@@ -71,98 +99,116 @@ module.exports =
   #  - Event bubbling phase: Cursor position updated to clicked position.
   observeMouse: ->
     locationStack = []
-    handleCapture = ({target}) =>
-      return unless target.getModel?()?.getURI?()?
-      return unless editor = atom.workspace.getActiveTextEditor()
-      locationStack.push @getLocation('mousedown', editor)
+    handleCapture = (event) ->
+      editor = closestTextEditor(event.target)
+      if editor?.getURI()
+        locationStack.push(new Location('mousedown', editor))
 
-    handleBubble = ({target}) =>
-      return unless target.getModel?()?.getURI?()?
-      setTimeout =>
-        @checkLocationChange(locationStack.pop()) if locationStack.length
-      , 100
+    handleBubble = (event) =>
+      if closestTextEditor(event.target)?.getURI()
+        setTimeout =>
+          @checkLocationChange(location) if location = locationStack.pop()
+        , 100
 
     workspaceElement = atom.views.getView(atom.workspace)
-    workspaceElement.addEventListener 'mousedown', handleCapture, true
-    workspaceElement.addEventListener 'mousedown', handleBubble, false
+    workspaceElement.addEventListener('mousedown', handleCapture, true)
+    workspaceElement.addEventListener('mousedown', handleBubble, false)
 
     @subscriptions.add new Disposable ->
-      workspaceElement.removeEventListener 'mousedown', handleCapture, true
-      workspaceElement.removeEventListener 'mousedown', handleBubble, false
-
-  isIgnoreCommands: (command) ->
-    (command in ignoreCommands) or (command in settings.get('ignoreCommands'))
+      workspaceElement.removeEventListener('mousedown', handleCapture, true)
+      workspaceElement.removeEventListener('mousedown', handleBubble, false)
 
   observeCommands: ->
-    shouldSaveLocation = (type, target) ->
-      (':' in type) and target.getModel?()?.getURI?()?
+    isInterestingCommand = (type) =>
+      (':' in type) and (type not in @ignoreCommands)
 
-    locationStack = []
-    saveLocation = _.debounce (type, target) =>
-      return unless shouldSaveLocation(type, target)
-      # console.log  "WillDispatch: #{type}"
-      locationStack.push @getLocation(type, target.getModel())
-    , 100, true
+    @locationStackForTestSpec = locationStack = []
+    trackLocationChange = (type, editor) ->
+      locationStack.push(new Location(type, editor))
+    trackLocationChangeDebounced = _.debounce(trackLocationChange, 100, true)
 
-    @subscriptions.add atom.commands.onWillDispatch ({type, target}) =>
-      return if @isIgnoreCommands(type)
-      saveLocation(type, target)
+    @subscriptions.add atom.commands.onWillDispatch ({type, target}) ->
+      editor = closestTextEditor(target)
+      if editor?.getURI() and isInterestingCommand(type)
+        trackLocationChangeDebounced(type, editor)
 
     @subscriptions.add atom.commands.onDidDispatch ({type, target}) =>
-      return if @isIgnoreCommands(type)
       return if locationStack.length is 0
-      return unless shouldSaveLocation(type, target)
-      # console.log  "DidDispatch: #{type}"
-      setTimeout =>
-        @checkLocationChange(locationStack.pop()) if locationStack.length
-      , 100
+      editor = closestTextEditor(target)
+      if editor?.getURI() and isInterestingCommand(type)
+        setTimeout =>
+          # To wait cursor position is set on final destination in most case.
+          @checkLocationChange(location) if location = locationStack.pop()
+        , 100
 
   checkLocationChange: (oldLocation) ->
-    return unless editor = atom.workspace.getActiveTextEditor()
-    editorElement = atom.views.getView(editor)
-    if editorElement.hasFocus() and (editor.getURI() is oldLocation.URI)
-      newLocation = @getLocation(oldLocation.type, editor)
-      @emitter.emit 'did-change-location', {oldLocation, newLocation}
-    else
-      @saveHistory oldLocation, subject: "Save on focus lost"
+    editor = atom.workspace.getActiveTextEditor()
+    return unless editor
 
-  jump: (direction, {withinEditor}={}) ->
-    return unless editor = atom.workspace.getActiveTextEditor()
-    needToSave = (direction is 'prev') and @history.isIndexAtHead()
-    forURI = if withinEditor then editor.getURI() else null
-    unless entry = @history.get(direction, URI: forURI)
-      return
+    if editor.element.hasFocus() and (editor.getURI() is oldLocation.URI)
+      # Move within same buffer.
+      newLocation = new Location(oldLocation.type, editor)
+      @emitter.emit('did-change-location', {oldLocation, newLocation})
+    else
+      @emitter.emit('did-unfocus', {oldLocation})
+
+  jump: (editor, direction, {withinEditor}={}) ->
+    wasAtHead = @history.isIndexAtHead()
+    if withinEditor
+      entry = @history.get(direction, URI: editor.getURI())
+    else
+      entry = @history.get(direction)
+
+    return unless entry?
     # FIXME, Explicitly preserve point, URI by setting independent value,
     # since its might be set null if entry.isAtSameRow()
     {point, URI} = entry
 
-    if needToSave
-      @saveHistory @getLocation('prev', editor),
-        setIndexToHead: false
-        subject: "Save head position"
+    needToLog = true
+    if (direction is 'prev') and wasAtHead
+      location = new Location('prev', editor)
+      @saveHistory(location, setIndexToHead: false, subject: "Save head position")
+      needToLog = false
 
-    options = {point, direction, log: not needToSave}
+    activePane = atom.workspace.getActivePane()
     if editor.getURI() is URI
-      @land(editor, options)
+      @land(editor, point, direction, log: needToLog)
+    else if item = findEditorForPaneByURI(activePane, URI)
+      activePane.activateItem(item)
+      @land(item, point, direction, forceFlash: true, log: needToLog)
     else
-      searchAllPanes = settings.get('searchAllPanes')
-      atom.workspace.open(URI, {searchAllPanes}).then (editor) =>
-        @land(editor, options)
+      atom.workspace.open(URI, searchAllPanes: settings.get('searchAllPanes')).then (editor) =>
+        @land(editor, point, direction, forceFlash: true, log: needToLog)
 
-  land: (editor, {point, direction, log}) ->
-    editor.setCursorBufferPosition(point)
-    editor.scrollToCursorPosition({center: true})
-    Flasher.flash() if settings.get('flashOnLand')
+  land: (editor, point, direction, options={}) ->
+    originalRow = editor.getCursorBufferPosition().row
+    editor.setCursorBufferPosition(point, autoscroll: false)
+    editor.scrollToCursorPosition(center: true)
 
-    if settings.get('debug') and log
+    if settings.get('flashOnLand')
+      if options.forceFlash or (originalRow isnt point.row)
+        @flash(editor)
+
+    if settings.get('debug') and options.log
       @logHistory(direction)
 
-  getLocation: (type, editor) ->
-    {
-      type, editor,
-      point: editor.getCursorBufferPosition(),
-      URI: editor.getURI()
-    }
+
+  flashMarker: null
+  flash: (editor) ->
+    @flashMarker?.destroy()
+    cursorPosition = editor.getCursorBufferPosition()
+    @flashMarker = editor.markBufferPosition(cursorPosition)
+    decorationOptions = {type: 'line', class: 'cursor-history-flash-line'}
+    editor.decorateMarker(@flashMarker, decorationOptions)
+
+    destroyMarker = =>
+      disposable?.destroy()
+      disposable = null
+      @flashMarker?.destroy()
+
+    disposable = editor.onDidChangeCursorPosition(destroyMarker)
+    # [NOTE] animation-duration has to be shorter than this value(1sec)
+    setTimeout(destroyMarker, 1000)
 
   logHistory: (msg) ->
     s = """

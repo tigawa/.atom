@@ -1,0 +1,1 @@
+{"source":".minimap .git-line-modified {\n  background: rgba(204, 120, 51, 0.5);\n}\n.minimap .git-line-added {\n  background: rgba(81, 159, 80, 0.6);\n}\n.minimap .git-line-removed {\n  background: rgba(218, 73, 57, 0.7);\n}\n"}

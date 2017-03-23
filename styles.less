@@ -1,0 +1,121 @@
+.markdown-preview {
+  @c_border: #666; // border-color
+  @caption: orange; // caption-color
+
+  p.author {
+    width: 200px;
+    height: 8px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    &:before {
+      content: "作成者：";
+    }
+  }
+  p.since {
+    width: 200px;
+    height: 8px;
+    margin-left: auto;
+    &:before {
+      content: "作成日：";
+    }
+  }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  color: black;
+  hr {
+    margin: 50px 0;
+    background-color: transparent;
+    &:after{
+      content: "";
+      display: block;
+      border-top-style: ridge;
+    }
+    &.pb {
+      // <hr class="pb">を入れる事で、
+      // プリント時の改ページを指定することができる。
+      page-break-after: always;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    border-color: @c_border;
+  }
+  h1 {
+    font-size: 35px;
+    border: none;
+    margin: 35px auto;
+    text-align: center;
+    letter-spacing: 5px
+  }
+  h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin: 50px auto 25px;
+  }
+  h2:before {
+    content: "";
+  	background-color: @caption;
+  	width: 5px;
+  	height: 35px;
+  	float: left;
+    margin-right: 5px
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px
+  }
+  // 僕の用途ではh4以降は基本的に必要ないので、
+  // 設定していません。
+
+  // 見出し以外のタグを字下げする
+  // ぱっと思いつく、よく使うタグを指定
+  p, table, ul, ol, dl, pre, blockquote {
+    margin-left: 15px;
+    ul, ol, dl {
+      margin-left: 0px;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 800px;
+    th {
+      text-align: center;
+      background-color: #eee;
+      border-color: @c_border;
+    }
+    tr {
+      border-top: #666;
+    }
+    td {
+      border-color: @c_border;
+    }
+  }
+  .margin-clear {
+    margin-left: 0;
+  }
+  // テキストの中央揃え
+  .center {
+    text-align: center;
+    &:extend(.margin-clear);
+  }
+  // テキストの右寄せ
+  .right {
+    text-align: right;
+    &:extend(.margin-clear);
+  }
+
+  // ソースコード　コマンドの文字が見えにくいので変更
+  pre.editor-colors{
+    background-color: black !important;
+    .line {
+      background-color: black;
+    }
+  }
+}

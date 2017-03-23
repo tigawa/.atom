@@ -3,6 +3,30 @@
   'jquery':
     'prefix':'jquery'
     'body':'<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>'
+'.source.js.jsx':
+# react
+  'react-base':
+    'prefix':'react'
+    'body': """
+      import React from 'react'
+      import { Grid, Row, Glyphicon, Tabs, Tab} from 'react-bootstrap';
+
+      function ${1:ClassName}(){
+        return (
+          <div></div>
+        )
+      }
+
+      // ${1:ClassName}.propTypes = {};
+      // ${1:ClassName}.defaultProps = {};
+      export default ${1:ClassName}
+    """
+  'react-string':
+    'prefix':'string'
+    'body':'React.PropTypes.stirng'
+  'react-isRequired':
+    'prefix':'isRequired'
+    'body':'React.PropTypes.func.isRequired'
 '.source.gfm':
 # markdown
   'markdown-url':
@@ -14,6 +38,13 @@
   'markdown-img':
     'prefix':'img'
     'body':'![${1:text}](${2:url})'
+  'markdown-python':
+    'prefix':'py'
+    'body': """
+        ```python
+        ${1:code}
+        ```
+    """
 # rabbit
   'rabbit-image-width':
     'prefix':'width'
@@ -30,7 +61,7 @@
         :   井川泰一
 
         theme
-        :   rabbit
+        :   lightning-clear-blue
     """
 # hugo
   'hugo-head':

@@ -17,7 +17,7 @@
     'name': 'meta.import.declaration.protobuf'
   }
   {
-    'begin': '\\b(message)\\s+([A-Za-z0-9_]+)\\s*\\{'
+    'begin': '\\b(message)\\s+([A-Za-z0-9_]+)'
     'captures':
       '1':
         'name': 'storage.type.message.protobuf'
@@ -39,7 +39,7 @@
   }
 
   {
-    'begin': '\\b(enum)\\s+([A-Za-z0-9_]+)\\s*\\{'
+    'begin': '\\b(enum)\\s+([A-Za-z0-9_]+)'
     'beginCaptures':
       '1':
         'name': 'storage.type.enum.protobuf'
@@ -69,7 +69,7 @@
     ]
   }
   {
-    'begin': '\\b(service)\\s+([A-Za-z0-9_]+)\\s*\\{'
+    'begin': '\\b(service)\\s+([A-Za-z0-9_]+)'
     'beginCaptures':
       '1':
         'name': 'storage.type.enum.protobuf'
@@ -85,14 +85,16 @@
           '2':
             'name': 'entity.name.function.service-rpc.protobuf'
           '3':
-            'name': 'variable.parameter.request-type.protobuf'
-          '4':
-            'name': 'keyword.operator.returns.protobuf'
-          '5':
             'name': 'keyword.other.stream.protobuf'
+          '4':
+            'name': 'variable.parameter.request-type.protobuf'
+          '5':
+            'name': 'keyword.operator.returns.protobuf'
           '6':
-            'name': 'variable.parameter.response-type.protobuf'  
-        'match': '\\b(rpc)\\s+([A-Za-z0-9_]+)\\s+\\(([A-Za-z0-9_]+)\\)\\s*(returns)\\s*\\((stream\\s+)?([A-Za-z0-9_]+)\\)\\s*;'
+            'name': 'keyword.other.stream.protobuf'
+          '7':
+            'name': 'variable.parameter.response-type.protobuf'
+        'match': '\\b(rpc)\\s+([A-Za-z0-9_]+)\\s+\\((stream\\s+)?([A-Za-z0-9_\x2e]+)\\)\\s*(returns)\\s*\\((stream\\s+)?([A-Za-z0-9_\x2e]+)\\)\\s*;'
         'name': 'meta.individual-rpc-call.protobuf'
       }
       {
@@ -208,7 +210,7 @@
     'end': '\\n'
     'name': 'comment.line.double-slash.protobuf'
   'extend_block':
-    'begin': '\\b(extend)\\s+([A-Za-z0-9_]+)\\s*\\{'
+    'begin': '\\b(extend)\\s+([A-Za-z0-9_]+)'
     'captures':
       '1':
         'name': 'storage.type.extend.protobuf'

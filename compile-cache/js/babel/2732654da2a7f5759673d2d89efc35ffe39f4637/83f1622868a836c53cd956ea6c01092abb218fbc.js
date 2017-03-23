@@ -1,0 +1,20 @@
+'use babel';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const isFunction = value => isType(value, 'function');
+
+const isString = value => isType(value, 'string');
+
+const isType = (value, typeName) => {
+  const t = typeof value;
+  if (t == null) {
+    return false;
+  }
+  return t === typeName;
+};
+
+exports.isFunction = isFunction;
+exports.isString = isString;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInR5cGUtaGVscGVycy5qcyJdLCJuYW1lcyI6WyJpc0Z1bmN0aW9uIiwidmFsdWUiLCJpc1R5cGUiLCJpc1N0cmluZyIsInR5cGVOYW1lIiwidCJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0FBRUEsTUFBTUEsYUFBYUMsU0FBU0MsT0FBT0QsS0FBUCxFQUFjLFVBQWQsQ0FBNUI7O0FBRUEsTUFBTUUsV0FBV0YsU0FBU0MsT0FBT0QsS0FBUCxFQUFjLFFBQWQsQ0FBMUI7O0FBRUEsTUFBTUMsU0FBUyxDQUFDRCxLQUFELEVBQVFHLFFBQVIsS0FBcUI7QUFDbEMsUUFBTUMsSUFBSSxPQUFPSixLQUFqQjtBQUNBLE1BQUlJLEtBQUssSUFBVCxFQUFlO0FBQUUsV0FBTyxLQUFQO0FBQWM7QUFDL0IsU0FBT0EsTUFBTUQsUUFBYjtBQUNELENBSkQ7O1FBTVNKLFUsR0FBQUEsVTtRQUFZRyxRLEdBQUFBLFEiLCJmaWxlIjoidHlwZS1oZWxwZXJzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBiYWJlbCdcblxuY29uc3QgaXNGdW5jdGlvbiA9IHZhbHVlID0+IGlzVHlwZSh2YWx1ZSwgJ2Z1bmN0aW9uJylcblxuY29uc3QgaXNTdHJpbmcgPSB2YWx1ZSA9PiBpc1R5cGUodmFsdWUsICdzdHJpbmcnKVxuXG5jb25zdCBpc1R5cGUgPSAodmFsdWUsIHR5cGVOYW1lKSA9PiB7XG4gIGNvbnN0IHQgPSB0eXBlb2YgdmFsdWVcbiAgaWYgKHQgPT0gbnVsbCkgeyByZXR1cm4gZmFsc2UgfVxuICByZXR1cm4gdCA9PT0gdHlwZU5hbWVcbn1cblxuZXhwb3J0IHsgaXNGdW5jdGlvbiwgaXNTdHJpbmcgfVxuIl19

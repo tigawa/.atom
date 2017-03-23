@@ -1,7 +1,9 @@
 # Jumpy
 
+[![Join the chat at https://gitter.im/jumpy-atom/Lobby](https://badges.gitter.im/jumpy-atom/Lobby.svg)](https://gitter.im/jumpy-atom/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![](https://img.shields.io/apm/dm/jumpy.svg)
 ![](https://img.shields.io/apm/v/jumpy.svg)
+[![Build Status](https://travis-ci.org/DavidLGoldberg/jumpy.svg?branch=master)](https://travis-ci.org/DavidLGoldberg/jumpy)
 
 An Atom package that creates dynamic hotkeys to jump around files and across visible panes.
 
@@ -88,7 +90,7 @@ Note: Styles can be overridden in **'Atom' -> 'Open Your Stylesheet'**
 (see examples below)
 
 ```less
-atom-text-editor /deep/ {
+atom-text-editor {
     .jumpy-label {
         // Regular labels
         background-color: black;

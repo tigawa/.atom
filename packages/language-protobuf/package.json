@@ -1,34 +1,59 @@
 {
-  "name": "language-protobuf",
-  "version": "0.5.0",
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+        "spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/apm-install-dir-117224-52770-1dcl2dk"
+    ]
+  ],
+  "_from": "../d-117224-52770-13bmx2h/package.tgz",
+  "_id": "language-protobuf@0.7.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/language-protobuf",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+    "spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117224-52770-13bmx2h/package.tgz",
+  "_shasum": "06ff3bb914fdd673db286525129ef240e0bcb094",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52770-13bmx2h/package.tgz",
+  "_where": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/apm-install-dir-117224-52770-1dcl2dk",
+  "bugs": {
+    "url": "https://github.com/podgib/atom-protobuf/issues"
+  },
+  "dependencies": {},
   "description": "Adds protocol buffer support to atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/podgib/atom-protobuf#readme",
+  "license": "MIT",
+  "name": "language-protobuf",
+  "optionalDependencies": {},
+  "readme": "# language-protobuf package\n\nAdds protocol buffer language support to Atom.\n\nOriginally adapted from [michaeledgar](https://github.com/michaeledgar)'s\n[TextMate bundle](https://github.com/michaeledgar/protobuf-tmbundle).\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/podgib/atom-protobuf.git"
   },
-  "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
-  },
-  "dependencies": {},
-  "readme": "# language-protobuf package\n\nAdds protocol buffer language support to Atom.\n\nOriginally adapted from [michaeledgar](https://github.com/michaeledgar)'s\n[TextMate bundle](https://github.com/michaeledgar/protobuf-tmbundle).\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/podgib/atom-protobuf/issues"
-  },
-  "homepage": "https://github.com/podgib/atom-protobuf#readme",
-  "_id": "language-protobuf@0.5.0",
-  "_shasum": "4cac1a96205732fcfcd5a80fee2d7dc2cbffe8f0",
-  "_resolved": "file:../d-11643-9525-18lmitn/package.tgz",
-  "_from": "../d-11643-9525-18lmitn/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "version": "0.7.1"
 }

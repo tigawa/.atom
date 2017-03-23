@@ -1,5 +1,4 @@
-# FIXME: Beacon code (currently broken in shadow).  This will probably return
-# in the form of a decoration with a "flash", not sure yet.
+# TODO: Merge in @johngeorgewright's code for treeview
 # TODO: Merge in @willdady's code for better accuracy.
 # TODO: Remove space-pen?
 
@@ -58,8 +57,6 @@ class JumpyView extends View
             priority: -1
         @statusBarJumpy = document.getElementById 'status-bar-jumpy'
 
-        @initKeyFilters()
-
     getKey: (character) ->
         @statusBarJumpy?.classList.remove 'no-match'
 
@@ -113,19 +110,12 @@ class JumpyView extends View
         @statusBarJumpy?.classList.remove 'no-match'
         @statusBarJumpyStatus?.innerHTML = 'Jump Mode!'
 
-    initKeyFilters: ->
-        @filteredJumpyKeys = @getFilteredJumpyKeys()
-        Object.observe atom.keymaps.keyBindings, ->
-            @filteredJumpyKeys = @getFilteredJumpyKeys()
-        # Don't think I need a corresponding unobserve
-
     getFilteredJumpyKeys: ->
         atom.keymaps.keyBindings.filter (keymap) ->
-            keymap.command
-                .indexOf('jumpy') > -1 if typeof keymap.command is 'string'
+            keymap.command.includes 'jumpy' if typeof keymap.command is 'string'
 
     turnOffSlowKeys: ->
-        atom.keymaps.keyBindings = @filteredJumpyKeys
+        atom.keymaps.keyBindings = @getFilteredJumpyKeys()
 
     toggle: ->
         @clearJumpMode()
@@ -256,7 +246,7 @@ class JumpyView extends View
         location = @findLocation()
         if location == null
             return
-        @disposables.add atom.workspace.observeTextEditors (currentEditor) ->
+        @disposables.add atom.workspace.observeTextEditors (currentEditor) =>
             editorView = atom.views.getView(currentEditor)
 
             # Prevent other editors from jumping cursors as well
@@ -274,15 +264,20 @@ class JumpyView extends View
             else
                 currentEditor.setCursorScreenPosition location.position
 
-            useHomingBeacon =
-                atom.config.get 'jumpy.useHomingBeaconEffectOnJumps'
-            if useHomingBeacon
-                cursor = editorView.shadowRoot.querySelector '.cursors .cursor'
-                if cursor
-                    cursor.classList.add 'beacon'
-                    setTimeout ->
-                        cursor.classList.remove 'beacon'
-                    , 150
+            if atom.config.get 'jumpy.useHomingBeaconEffectOnJumps'
+                @drawBeacon currentEditor, location
+
+    drawBeacon: (editor, location) ->
+        range = Range location.position, location.position
+        marker = editor.markScreenRange range, invalidate: 'never'
+        beacon = document.createElement 'span'
+        beacon.classList.add 'beacon'
+        editor.decorateMarker marker,
+            item: beacon,
+            type: 'overlay'
+        setTimeout ->
+            marker.destroy()
+        , 150
 
     findLocation: ->
         label = "#{@firstChar}#{@secondChar}"

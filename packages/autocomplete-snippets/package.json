@@ -1,26 +1,43 @@
 {
-  "name": "autocomplete-snippets",
-  "main": "./lib/autocomplete-snippets",
-  "version": "1.10.0",
-  "description": "Adds snippets to autocomplete+ suggestions",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atom/autocomplete-snippets.git"
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+        "spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/apm-install-dir-117224-52693-1ia2heo"
+    ]
+  ],
+  "_from": "../d-117224-52693-1q1583g/package.tgz",
+  "_id": "autocomplete-snippets@1.11.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/autocomplete-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+    "spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+    "type": "local"
   },
-  "license": "MIT",
-  "engines": {
-    "atom": ">=0.174.0 <2.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "coffeelint": "^1.9.7"
-  },
-  "providedServices": {
-    "autocomplete.provider": {
-      "versions": {
-        "2.0.0": "provide"
-      }
-    }
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117224-52693-1q1583g/package.tgz",
+  "_shasum": "d896ce5018a1b3151ce66a325116b457e0efac1f",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/d-117224-52693-1q1583g/package.tgz",
+  "_where": "/private/var/folders/93/35m9j2kx7n175hpvt1pd40f80000gn/T/apm-install-dir-117224-52693-1ia2heo",
+  "bugs": {
+    "url": "https://github.com/atom/autocomplete-snippets/issues"
   },
   "consumedServices": {
     "snippets": {
@@ -29,29 +46,31 @@
       }
     }
   },
-  "readme": "# autocomplete+ snippet suggestions [![Build Status](https://travis-ci.org/atom/autocomplete-snippets.svg)](https://travis-ci.org/atom/autocomplete-snippets)\n\nAdds snippets to autocomplete+ suggestions\n\n![autocomplete-snippets](http://s7.directupload.net/images/140411/kgdlgsgx.gif)\n\n## Features\n\n* Adds user snippets and language snippets to the autocomplete+ suggestions list\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/atom/autocomplete-snippets/issues"
+  "dependencies": {},
+  "description": "Adds snippets to autocomplete+ suggestions",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
   },
   "homepage": "https://github.com/atom/autocomplete-snippets#readme",
-  "_id": "autocomplete-snippets@1.10.0",
-  "_shasum": "84154609a5e578d40602025eeef1aaf21fc477ec",
-  "_resolved": "file:../d-116110-42191-wz3aai/package.tgz",
-  "_from": "../d-116110-42191-wz3aai/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".json": [
-        "coffeelint.json",
-        "package.json"
-      ],
-      ".coffee": [
-        "lib/autocomplete-snippets.coffee",
-        "lib/snippets-provider.coffee"
-      ]
-    },
-    "folders": []
-  }
+  "license": "MIT",
+  "main": "./lib/autocomplete-snippets",
+  "name": "autocomplete-snippets",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "readme": "# autocomplete+ snippet suggestions [![Build Status](https://travis-ci.org/atom/autocomplete-snippets.svg)](https://travis-ci.org/atom/autocomplete-snippets)\n\nAdds snippets to autocomplete+ suggestions\n\n![autocomplete-snippets](http://s7.directupload.net/images/140411/kgdlgsgx.gif)\n\n## Features\n\n* Adds user snippets and language snippets to the autocomplete+ suggestions list\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/autocomplete-snippets.git"
+  },
+  "version": "1.11.0"
 }

@@ -1,3 +1,16 @@
+## 3.1.3 - Remove deprecation (Object.observe)
+*   Simplify and Remove logic that used Object.observe for key maps.
+
+## 3.1.2 - Fix beacon
+*   Merge @johngeorgewright PR to restore the beacon functionality!
+
+## 3.1.1 - Add Travis CI Badge
+*   First run of Travis!
+
+## 3.1.0 Gitter and Travis Continuous Integration
+*   Adds .travis.yml to project for Travis Continuous Integration.
+*   Adds a gitter badge to the README.md.
+
 ## 3.0.3
 * Fix issue #84 (PR: #85) from Danny Arnold (@despairblue)
 
